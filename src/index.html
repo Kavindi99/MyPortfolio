@@ -2,63 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <!--Meta data, Title-->
+    <title>My Portfolio</title>
+    <base href="localhost">
+    <!-- Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="IJSE, GDSE, Portfolio, Developer">
+    <meta name="description" content="This is for testing My Portfolio">
+    <meta name="author" content="IJSE">
+    <meta name="owner" content="Kavindi Vithanage">
+    <meta name="robots" content="index">
+    <meta name="theme-color" content="red">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <!--Favicon-->
+    <link rel="icon" href="assests/images/favicon.png">
+
 </head>
+<!--Body Content-->
 <body>
-<section>
-    <h1>Portfolio</h1>
-    <ul>
-        <li><a href="#home" data-after="Home">Home</a></li>
-        <li><a href="#about" data-after="About">About</a></li>
-        <li><a href="#projects" data-after="Projects">Projects</a></li>
-        <li><a href="#gallery" data-after="Gallery">Gallery</a></li>
-        <li><a href="#contact" data-after="Contact">Contact</a></li>
-    </ul>
+<header>
+    <h2>Portfolio</h2>
+    <nav> <!--The <nav> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents-->
+        <menu>
+            <li><a href="#Home">Home</a> </li>
+            <li><a href="#About">About</a> </li>
+            <li><a href="#Skills">Education</a> </li>
+            <li><a href="#Gallery">Gallery</a> </li>
+            <li><a href="#Projects">Projects</a> </li>
+            <li><a href="#Contact">Contact</a> </li>
+        </menu>
+    </nav>
+</header>
 
-    <h3>Hello, I'M Kavindi Vithanage</h3>
-    <h1>Web Designer & Developer </h1>
-</section>
+<!--Main Body Content Part-->
+<main>
+    <!--Home-->
+    <section>
+        <dfn id="Home"></dfn>
+        <aside></aside> <!--Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage-->
+        <article> <!--The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable-->
+            <h1>Hi! I'm Kavindi Vithanage</h1>
+            <h2>Web Designer & Developer </h2>
 
-<section>
+            <img src="assests/images/Insta.png" width="2%">
+            <a href=""></a>
 
-<section>
-    <section id="aboutme">
-        <h2>About Me</h2>
-        <article> <p> I'm Kavindi Vithanage a web designer & a developer based in Sri Lanka.These days I'm following graduate diploma in software engineering
-            at IJSE(Institute of Software Enginnering)<br><br>
-            I'm very passionated and dedicated to my works.Also I like to improve my knowledge & skills working with projects.
-        </p></article>
+            <img src="assests/images/Linkdin%20Icon.png" width="2%">
+            <a href=""></a>
 
-        <p> Name : Thellambura Vithanage Sanduni Kavindi </p>
-        <p> Contact : +94 765262987 </p>
-        <p> Based On : Galle, Sri Lanka  </p>
-        <p> Age : 23 years </p>
-        <p> Email : kavindivithanage23@gmail.com  </p>
-        <p> Degree : Undergraduate </p>
+            <img src="assests/images/Twit.png" width="2%">
+            <a href=""></a>
+
+            <img src="assests/images/Git.png" width="2%">
+            <a href="https://github.com/Kavindi99"></a>
+        </article>
+    </section>
+
+    <section>
+        <!--About-->
+        <dfn id="About"></dfn>
+        <div>
+            <!--About me in detail-->
+            <h2>About Me</h2>
+            <article> <p> I'm Kavindi Vithanage a web designer & a developer based in Sri Lanka.These days I'm following graduate diploma in software engineering
+                at IJSE(Institute of Software Enginnering)<br><br>
+                I'm very passionated and dedicated to my works.Also I like to improve my knowledge & skills working with projects.
+            </p></article>
+        </div>
+
+        <div>
+            <!--Personal Information-->
+            <ul>
+                <li><bdi>Name</bdi>
+                    : Thellambura Vithanage Sanduni Kavindi
+                </li>
+            </ul>
+            <ul>
+                <li><bdi>Contact</bdi>
+                    : +94 765262987
+                </li>
+            </ul>
+            <ul>
+                <li><bdi>Based On</bdi>
+                    : Galle, Sri Lanka
+                </li>
+            </ul>
+            <ul>
+                <li><bdi>Age</bdi>
+                    : 23 years
+                </li>
+            </ul>
+            <ul>
+                <li><bdi>Email</bdi>
+                    : kavindivithanage23@gmail.com
+                </li>
+            </ul>
+            <ul>
+                <li><bdi>Degree</bdi>
+                    : Undergraduate
+                </li>
+            </ul>
+        </div>
 
     </section>
-</section>
 
+    <section>
+        <!--Projects-->
         <h2>Projects</h2>
+        <article>
         <ul>
-            <li>Restora Resturant Web Site</li>
-            <img src="img.jpg" width="73" height="62">
-            <li>Hotel Management System</li>
-            <img src="hotel.PNG" width="73" height="62">
-            <li>Tea Factory Management System</li>
-            <img src="Tea.PNG" width="73" height="62">
-        </ul>
+            <img src="assests/images/ui.jpg" width="15%" height="15%">
+            <li>UI Designing</li>
+            <img src="assests/images/application.jpeg" width="15%" height="15%">
+            <li>Application Development</li>
+            <img src="assests/images/web.jpg" width="15%" height="15%">
+            <li>Web Development</li>
 
+            <img src="assests/images/restora.PNG" width="15%">
+            <li>Restora Resturant Web Site</li>
+            <img src="assests/images/hotel.PNG" width="15%">
+            <li>Hotel Management System</li>
+            <img src="assests/images/Tea.PNG" width="15%">
+            <li>Tea Factory Management System</li>
+
+        </ul>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <!--Skills-->
         <h2> Skills </h2>
         <ul>
             <li>Languages & Tools</li>
+            <img src="assests/images/c++.png" width="2%">
+            <img src="assests/images/SceneBuilderLogo.png" width="2%">
+            <img src="assests/images/jav.gif" width="2%">
+            <img src="assests/images/mysql.png" width="2%">
+            <img src="assests/images/php.png" width="2%">
+            <img src="assests/images/html.png" width="2%">
+            <img src="assests/images/css.png" width="2%">
+            <img src="assests/images/figma.gif" width="2%">
+            <img src="assests/images/vs.png" width="2%">
+            <img src="assests/images/intelij.png" width="2%">
+            <img src="assests/images/js.png" width="2%">
+            <img src="assests/images/wix.png" width="2%">
+            <img src="assests/images/Python.png" width="2%">
+            <img src="assests/images/NetBeans_Logo.png" width="2%">
+            <img src="assests/images/Git.png" width="2%">
+
+            <li> Certificates </li>
+
+            <img src="assests/images/cyber.PNG"width="15%" height="15%">
+            <img src="assests/images/cyber%20essentials.PNG" width="15%" height="15%">
+
         </ul>
 
 
+        </article>
+    </section>
 
-        <h2> Certificates </h2>
-
-        <section>
+    <section>
             <h2>Gallery</h2>
             <section>
                 <ul>
@@ -69,14 +173,11 @@
                 </ul>
 
             </section>
-        </section>
+    </section>
         <section>
             <h1></h1>
-            <img src="1stimg.jpeg" width="73" height="62">
-            <img src="" width="73" height="62">
-            <img src="" width="73" height="62">
-            <img src="" width="73" height="62">
-            <img src="" width="73" height="62">
+           <aside><img src="assests/images/gallery.PNG"></aside>
+
 
             <article></article>
         </section>
@@ -103,6 +204,6 @@
                     <input type="button" size="20" value="Send Message">
                 </section>
                 </section>
-
+</main>
 </body>
 </html>
