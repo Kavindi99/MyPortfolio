@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cd980e21-b10a-432d-8378-906083137966" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assests/images/ijselogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignments/css/caseTwo/assests/Home.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignments/css/caseTwo/assests/ijselogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignments/css/caseTwo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignments/css/caseTwo/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2N5KYIiddhxERDFUSANhcaTuT8E" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assignments/css/caseTwo" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IJSE\GDSE\2nd Sem\Internet Technoligies\Portfolio\MyPortfolio\src\assignments\css\caseTwo" />
+      <recent name="E:\IJSE\GDSE\2nd Sem\Internet Technoligies\Portfolio\MyPortfolio\src\assignments\css\caseTwo\assests" />
+      <recent name="E:\IJSE\GDSE\2nd Sem\Internet Technoligies\Portfolio\MyPortfolio\src\assests\images" />
+      <recent name="E:\IJSE\GDSE\2nd Sem\Internet Technoligies\Portfolio\MyPortfolio\src\assests" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd980e21-b10a-432d-8378-906083137966" name="Default Changelist" comment="" />
+      <created>1678948552368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678948552368</updated>
+      <workItem from="1678948555710" duration="3620000" />
+      <workItem from="1678969967923" duration="1380000" />
+      <workItem from="1678980379401" duration="1403000" />
+      <workItem from="1678982923904" duration="52000" />
+      <workItem from="1679121672712" duration="618000" />
+      <workItem from="1679126338582" duration="1297000" />
+      <workItem from="1679197695216" duration="5039000" />
+      <workItem from="1679206624194" duration="2032000" />
+      <workItem from="1679759456576" duration="63000" />
+      <workItem from="1680670068927" duration="4172000" />
+      <workItem from="1680729342503" duration="181000" />
+      <workItem from="1680790336750" duration="3000" />
+      <workItem from="1680796186046" duration="1000" />
+      <workItem from="1680954068860" duration="375000" />
+      <workItem from="1682010668021" duration="12460000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
