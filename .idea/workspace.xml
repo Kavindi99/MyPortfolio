@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd980e21-b10a-432d-8378-906083137966" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assests/images/ijselogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignments/css/caseTwo/assests/Home.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignments/css/caseTwo/assests/ijselogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignments/css/caseTwo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignments/css/caseTwo/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="cd980e21-b10a-432d-8378-906083137966" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assignments/css/caseTwo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
@@ -51,19 +41,6 @@
       <recent name="E:\IJSE\GDSE\2nd Sem\Internet Technoligies\Portfolio\MyPortfolio\src\assests\images" />
       <recent name="E:\IJSE\GDSE\2nd Sem\Internet Technoligies\Portfolio\MyPortfolio\src\assests" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,7 +64,10 @@
       <workItem from="1680790336750" duration="3000" />
       <workItem from="1680796186046" duration="1000" />
       <workItem from="1680954068860" duration="375000" />
-      <workItem from="1682010668021" duration="12460000" />
+      <workItem from="1682010668021" duration="18018000" />
+      <workItem from="1682216200727" duration="435000" />
+      <workItem from="1682630942172" duration="72000" />
+      <workItem from="1682631032644" duration="64000" />
     </task>
     <servers />
   </component>

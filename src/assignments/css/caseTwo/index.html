@@ -10,9 +10,17 @@
             box-shadow: 4px 1px 4px 0px #000005;
             background-color: white;
             border: solid black 1px;
-            height: 60px;
+            top: 0;
+            position: fixed;
+            width: 1340px;
+            z-index:3 ;
         }
 
+        body>main{
+            margin-top: 58px;
+            z-index: 4;
+
+        }
         header > img{
             width: 120px;
             height: 50px;
@@ -28,7 +36,9 @@
             margin-left: 20px;
             margin-right: 16px;
             display: inline-block;
+            color: red;
         }
+
 
         #sec1{
             width: auto;
@@ -39,7 +49,7 @@
         #navigation> div{
             border: 1px solid black;
             width: 250px;
-            height: 800px;
+            height: 850px;
             background-color: purple;
             position: absolute;
 
@@ -88,6 +98,17 @@
         #navbtn{
             color: white;
         }
+
+      /*  #chatbox{
+            width: 200px;
+            height: 50px;
+            background-color: cornflowerblue;
+            text-align: center;
+            color: white;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }*/
     </style>
 </head>
 <body>
@@ -95,10 +116,10 @@
     <img src="assests/ijselogo.png" alt="LOGO">
     <nav>
         <ul>
-            <li><i class="fa fa-fw fa-home"></i>Home</li>
-            <li><i class="fa fa-handshake-o"></i>Services</li>
-            <li><i class="fa fa-fw fa-envelope"></i>Contacts</li>                                                                                                                                                                                      i><i class="fa fa-fw fa-envelope"></i>Contacts</li>
-            <li><i class="fa fa-address-card"></i>About Us</li>
+            <li><i class="fa fa-fw fa-home"></i> <a href="#">Home</a></li>
+            <li><i class="fa fa-handshake-o"></i> <a href="#">Services</a></li>
+            <li><i class="fa fa-fw fa-envelope"></i> <a href="#">Contacts</a></li>                                                                                                                                                                                   i><i class="fa fa-fw fa-envelope"></i>Contacts</li>
+            <li><i class="fa fa-address-card"></i> <a href="#">About Us</a></li>
         </ul>
     </nav>
 </header>
@@ -135,6 +156,8 @@
 <footer>
     <p>Developed By IJSE</p>
 </footer>
+
+<!--<div id="chatbox"></div>-->
 
 </body>
 </html>
