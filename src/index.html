@@ -2,11 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--Meta data, Title-->
-    <title>My Portfolio</title>
-    <base href="localhost">
-    <!-- Meta tags-->
-    <meta charset="UTF-8">
     <meta name="keyword" content="IJSE, GDSE, Portfolio, Developer">
     <meta name="description" content="This is for testing My Portfolio">
     <meta name="author" content="IJSE">
@@ -14,196 +9,427 @@
     <meta name="robots" content="index">
     <meta name="theme-color" content="red">
     <meta name="viewport" content="width=device-width initial-scale=1">
-    <!--Favicon-->
+    <title>My Portfolio</title>
+    <base href="localhost">
     <link rel="icon" href="assests/images/favicon.png">
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+
+        body{
+            background: ivory;
+        }
+
+        header >h2{
+            position: absolute;
+            left: 20px;
+            top: 5px;
+        }
+
+        header > nav > ul {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+
+        header >nav >ul >li{
+            font-size: 20px;
+            margin-left: 2px;
+            margin-right: 16px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        main >section>img{
+            width: 400px;
+            height: 400px;
+            margin-top: 200px;
+            margin-left: 100px;
+        }
+        #introduction {
+            margin-top: 0;
+            margin-left: 700px;
+
+        }
+
+        #Details{
+            margin-left: 100px;
+
+        }
+
+        #Blob{
+            margin-right: 0;
+            margin-top: 0;
+            margin-left: 150px;
+        }
+
+        #Projects>h2{
+            margin-left: 100px;
+        }
+
+        #Skills{
+            margin-left: 100px;
+        }
+
+        #Gallery>h2{
+            margin-left: 100px;
+        }
+
+        #Gallerynav{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            height: 50px;
+            width: 650px;
+            /* border: 3px solid black;*/
+            display: flex;
+            align-items: center;
+            margin-left: 300px;
+            justify-content: space-around;
+        }
+
+        #Gallerynav>div{
+            width: 150px;
+            height: 30px;
+            /* text-align: center;*/
+
+        }
+        #Gallerynav>div:nth-child(1){
+            background: orange;
+            text-align: center;
+        }
+
+        #Gallerynav>div:nth-child(2){
+            background: orange;
+            text-align: center;
+        }
+
+        #Gallerynav>div:nth-child(3){
+            background: orange;
+            text-align: center;
+        }
+
+        #Gallerynav>div:nth-child(4){
+            background: orange;
+            text-align: center;
+        }
+
+        #Galleryimages{
+            position: relative;
+            top: 30px;
+            left: 30px;
+            width: 1000px;
+            height: 500px;
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(4,1fr);
+            margin-left: 150px;
+        }
+
+        #Galleryimages>div{
+            border: 1px solid grey;
+        }
+
+        #Galleryimages>div:nth-child(1){
+            background: url("assests/images/G1.jpeg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        #Galleryimages>div:nth-child(2){
+            background: url("assests/images/G2.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #Galleryimages>div:nth-child(3){
+            background: url("assests/images/G3.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #Galleryimages>div:nth-child(4){
+            background: url("assests/images/G4.jpeg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 4/5;
+            grid-row: 1/3;
+        }
+
+        #Galleryimages>div:nth-child(5){
+            background: url("assests/images/G5.jpg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 2/4;
+            grid-row: 2/4;
+        }
+
+        #Galleryimages>div:nth-child(6){
+            background: url("assests/images/G6.jpeg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 4/5;
+            grid-row: 3/5;
+        }
+
+        #Galleryimages>div:nth-child(7){
+            background: url("assests/images/G7.jpg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 1/2;
+            grid-row: 3/5;
+        }
+
+        #Galleryimages>div:nth-child(8){
+            background: url("assests/images/G8.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #Galleryimages>div:nth-child(9){
+            background: url("assests/images/G9.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #Projects>div>img{
+            width: 900px;
+            height:450px;
+            margin-left: 200px;
+        }
+
+        #Skills>div>img{
+            width: 900px;
+        }
+
+        #certificates{
+            margin-left: 300px;
+        }
+
+        /*#Contact>section>h2{
+            margin-left: 100px;
+        }*/
+
+        #Contact>section{
+            margin-left: 100px;
+        }
+
+        #Contact>div>img{
+            margin-left: 700px;
+            margin-right: 100px;
+            width: 500px;
+            height: 400px;
+            box-shadow: darkgrey;
+        }
+        footer{
+            height: 20px;
+            background: orange;
+        }
+    </style>
 
 </head>
-<!--Body Content-->
+
 <body>
+
 <header>
+    <!--Main Topic-->
     <h2>Portfolio</h2>
-    <nav> <!--The <nav> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents-->
-        <menu>
+
+    <!--Portfolio Navigations-->
+    <nav>
+        <ul>
             <li><a href="#Home">Home</a> </li>
             <li><a href="#About">About</a> </li>
             <li><a href="#Skills">Education</a> </li>
             <li><a href="#Gallery">Gallery</a> </li>
             <li><a href="#Projects">Projects</a> </li>
             <li><a href="#Contact">Contact</a> </li>
-        </menu>
+        </ul>
     </nav>
 </header>
 
-<!--Main Body Content Part-->
 <main>
-    <!--Home-->
+
     <section>
+
         <dfn id="Home"></dfn>
+        <img src="assests/images/firstmyimage.jpeg">
         <aside></aside> <!--Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage-->
         <article> <!--The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable-->
-            <h1>Hi! I'm Kavindi Vithanage</h1>
-            <h2>Web Designer & Developer </h2>
+            <section id="introduction">
+                <h2>Hi! I'm Kavindi Vithanage</h2>
+                <h3>Web Designer & Developer </h3>
 
-            <img src="assests/images/Insta.png" width="2%">
-            <a href=""></a>
+                <img src="assests/images/Insta.png" width="5%">
+                <a href=""></a>
 
-            <img src="assests/images/Linkdin%20Icon.png" width="2%">
-            <a href=""></a>
+                <img src="assests/images/Linkdin%20Icon.png" width="5%">
+                <a href=""></a>
 
-            <img src="assests/images/Twit.png" width="2%">
-            <a href=""></a>
+                <img src="assests/images/Twit.png" width="5%">
+                <a href=""></a>
 
-            <img src="assests/images/Git.png" width="2%">
-            <a href="https://github.com/Kavindi99"></a>
+                <img src="assests/images/Git.png" width="5%">
+                <a href="https://github.com/Kavindi99"></a>
+            </section>
         </article>
+
     </section>
 
-    <section>
-        <!--About-->
-        <dfn id="About"></dfn>
-        <div>
-            <!--About me in detail-->
+    <section id="Aboutme">
+        <!--About Me-->
+
+        <div id="Details">
+
             <h2>About Me</h2>
-            <article> <p> I'm Kavindi Vithanage a web designer & a developer based in Sri Lanka.These days I'm following graduate diploma in software engineering
+
+            <p> I'm Kavindi Vithanage a web designer & a developer based in Sri Lanka.These days I'm following graduate diploma in software engineering
                 at IJSE(Institute of Software Enginnering)<br><br>
                 I'm very passionated and dedicated to my works.Also I like to improve my knowledge & skills working with projects.
-            </p></article>
-        </div>
+            </p>
 
-        <div>
-            <!--Personal Information-->
-            <ul>
-                <li><bdi>Name</bdi>
-                    : Thellambura Vithanage Sanduni Kavindi
-                </li>
-            </ul>
-            <ul>
-                <li><bdi>Contact</bdi>
-                    : +94 765262987
-                </li>
-            </ul>
-            <ul>
-                <li><bdi>Based On</bdi>
-                    : Galle, Sri Lanka
-                </li>
-            </ul>
-            <ul>
-                <li><bdi>Age</bdi>
-                    : 23 years
-                </li>
-            </ul>
-            <ul>
-                <li><bdi>Email</bdi>
-                    : kavindivithanage23@gmail.com
-                </li>
-            </ul>
-            <ul>
-                <li><bdi>Degree</bdi>
-                    : Undergraduate
-                </li>
-            </ul>
-        </div>
+            <div id="Personal">
+                <!--Personal Information-->
 
-    </section>
-
-    <section>
-        <!--Projects-->
-        <h2>Projects</h2>
-        <article>
-        <ul>
-            <img src="assests/images/ui.jpg" width="15%" height="15%">
-            <li>UI Designing</li>
-            <img src="assests/images/application.jpeg" width="15%" height="15%">
-            <li>Application Development</li>
-            <img src="assests/images/web.jpg" width="15%" height="15%">
-            <li>Web Development</li>
-
-            <img src="assests/images/restora.PNG" width="15%">
-            <li>Restora Resturant Web Site</li>
-            <img src="assests/images/hotel.PNG" width="15%">
-            <li>Hotel Management System</li>
-            <img src="assests/images/Tea.PNG" width="15%">
-            <li>Tea Factory Management System</li>
-
-        </ul>
-        </article>
-    </section>
-
-    <section>
-        <article>
-            <!--Skills-->
-        <h2> Skills </h2>
-        <ul>
-            <li>Languages & Tools</li>
-            <img src="assests/images/c++.png" width="2%">
-            <img src="assests/images/SceneBuilderLogo.png" width="2%">
-            <img src="assests/images/jav.gif" width="2%">
-            <img src="assests/images/mysql.png" width="2%">
-            <img src="assests/images/php.png" width="2%">
-            <img src="assests/images/html.png" width="2%">
-            <img src="assests/images/css.png" width="2%">
-            <img src="assests/images/figma.gif" width="2%">
-            <img src="assests/images/vs.png" width="2%">
-            <img src="assests/images/intelij.png" width="2%">
-            <img src="assests/images/js.png" width="2%">
-            <img src="assests/images/wix.png" width="2%">
-            <img src="assests/images/Python.png" width="2%">
-            <img src="assests/images/NetBeans_Logo.png" width="2%">
-            <img src="assests/images/Git.png" width="2%">
-
-            <li> Certificates </li>
-
-            <img src="assests/images/cyber.PNG"width="15%" height="15%">
-            <img src="assests/images/cyber%20essentials.PNG" width="15%" height="15%">
-
-        </ul>
-
-
-        </article>
-    </section>
-
-    <section>
-            <h2>Gallery</h2>
-            <section>
                 <ul>
-                    <li><a href="#All">All</a></li>
-                    <li><a href="#Event">Event</a></li>
-                    <li><a href="#Travel">Travel</a></li>
-                    <li><a href="#Nature">Nature</a></li>
+                    <li><bdi>Name</bdi>
+                        : Thellambura Vithanage Sanduni Kavindi
+                    </li>
                 </ul>
 
-            </section>
+                <ul>
+                    <li><bdi>Contact</bdi>
+                        : +94 765262987
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><bdi>Based On</bdi>
+                        : Galle, Sri Lanka
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><bdi>Age</bdi>
+                        : 23 years
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><bdi>Email</bdi>
+                        : kavindivithanage23@gmail.com
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><bdi>Degree</bdi>
+                        : Undergraduate
+                    </li>
+                </ul>
+
+                <div id="Blob">
+                    <img src="assests/images/blob.png">
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
-        <section>
-            <h1></h1>
-           <aside><img src="assests/images/gallery.PNG"></aside>
 
+    <section id="Projects">
+        <!--Projects-->
 
-            <article></article>
+        <h2>Projects</h2>
+
+        <!--Project Details-->
+        <div><img src="assests/images/projects.PNG"></div>
+
+    </section>
+
+    <section id="Skills">
+        <!--Skills-->
+        <h2>Skills</h2>
+
+        <h3>Languages & Tools</h3>
+        <!--Languages & Tools Icons-->
+        <div><img src="assests/images/icons.PNG"></div>
+
+        <h3 id="certificates">Certificates</h3>
+        <!--Certificates-->
+        <div><img src="assests/images/certificates.PNG"></div>
+
+    </section>
+
+    <section id="Gallery">
+
+        <h2>Gallery</h2>
+
+        <section id="Gallerynav">
+            <!--Gallery Navigations-->
+            <div>All</div>
+            <div>Event</div>
+            <div>Travel</div>
+            <div>Nature</div>
         </section>
 
+        <section id="Galleryimages">
+            <!--Gallery Images Grid-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </section>
+    </section>
+
+    <section id="Contact">
+        <!--Contacts-->
         <section>
+
             <h2>Contact</h2>
+
             <article> <p> Let's chat.
                 Tell me about your projects.
             </p></article>
 
             <ul>
+                <!--Contact Details-->
                 <li>+9476 5262987</li>
                 <li>kavindivithanage23@gmail.com</li>
                 <li>Galle,Sri Lanka</li>
             </ul>
-            </section>
 
+        </section>
 
-                <section>
-                    <h3> <dfn id="connect">Connect Me</dfn> </h3>
-                    <input type="text" placeholder="Full Name" size="20"><br>
-                    <input type="email" placeholder="E-mail" size="20"><br>
-                    <input type="text" placeholder="Message" size="40"><br>
-                    <input type="button" size="20" value="Send Message">
-                </section>
-                </section>
+        <section>
+            <!--Contact Details Place holders & Massages-->
+            <h3> <dfn id="connect">Connect Me</dfn> </h3>
+
+            <input type="text" placeholder="Full Name" size="20"><br>
+            <input type="email" placeholder="E-mail" size="20"><br>
+            <input type="text" placeholder="Message" size="40"><br>
+            <input type="button" size="20" value="Send Message">
+
+        </section>
+
+        <div><img src="assests/images/contacts.jpg"></div>
+
+    </section>
 </main>
+
+<footer>
+
+</footer>
+
 </body>
+
 </html>
