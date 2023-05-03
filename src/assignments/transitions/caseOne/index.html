@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseOne</title>
+  <style>
+
+    section{
+      width: 400px;
+      height: 400px;
+      border: solid black 2px;
+      display: flex;
+      flex-direction: column;/*Default row*/
+      justify-content: space-around;
+      position: relative;
+        top: 130px;
+        right: 190px
+
+
+    }
+
+    div{
+       height: 50px;
+       border: 2px solid grey;
+       position: relative;
+        left: 0;
+        transition: all 5s;
+    }
+
+    section>div:hover{
+      transition: all 5s;
+      left: 181px;
+    }
+
+    div:nth-child(1){
+      background: cornflowerblue;
+    }
+
+    div:nth-child(2){
+      background: pink;
+    }
+
+    div:nth-child(3){
+      background: green;
+    }
+
+    div:nth-child(4){
+      background: #ff253a;
+    }
+
+    div:nth-child(5){
+      background: yellow;
+    }
+
+  </style>
+</head>
+<body>
+<section>
+<div >Hello</div>
+<div>Hello1</div>
+<div>Hello2</div>
+<div>Hello3</div>
+<div>Hello5</div>
+</section>
+</body>
+</html>
