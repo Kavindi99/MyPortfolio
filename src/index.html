@@ -2,125 +2,573 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keyword" content="IJSE, GDSE, Portfolio, Developer">
-    <meta name="description" content="This is for testing My Portfolio">
+    <title>My Portfolio</title>
+    <meta name="keywords" content="Portfolio , Sri Lanka , IJSE , GDSE , Developer">
+    <meta name="description" content="This is for testing  my portfolio description.">
     <meta name="author" content="IJSE">
     <meta name="owner" content="Kavindi Vithanage">
     <meta name="robots" content="index">
     <meta name="theme-color" content="red">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <title>My Portfolio</title>
     <base href="localhost">
-    <link rel="icon" href="assests/images/favicon.png">
-    <link rel="stylesheet" href="assests/normalize.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
 
     <style>
-
-        body{
-            background: ivory;
+        header>section{
+            background: url("assets/images/homebackground.PNG");
+            width: 100%;
+            height: 510px;
         }
 
-        header >h2{
-            position: absolute;
-            left: 20px;
-            top: 5px;
+        h1{
+            margin-left: 20px;
         }
 
-        header > nav > ul {
+        h2{
+            margin-left: 20px;
+        }
+
+        header>section>nav>ul{
             position: absolute;
-            right: 20px;
+            right: 0px;
             top: 15px;
         }
 
-        header >nav >ul >li{
+        header>section>nav>ul>li{
             font-size: 20px;
-            margin-left: 2px;
-            margin-right: 16px;
+            margin-left: 5px;
+            margin-right: 15px;
             display: inline-block;
+            /*  font-weight: bold;*/
+        }
+
+        header>section>nav>ul>li>a{
+            text-decoration: none;
+            color: white;
+        }
+
+        header>section>div{
+            background: url("assets/images/introbachground.PNG");
+            width: 410px;
+            height: 280px;
+            margin-left: 654px;
+            margin-top: 76px;
+        }
+
+        #p1{
+            font-size: 30px;
             font-weight: bold;
+
         }
 
-        main >section>img{
-            width: 400px;
-            height: 400px;
-            margin-top: 200px;
+        #p2{
+            font-size: 26px;
+        }
+
+        #icon1{
+            margin-left: 15px;
+            margin-top: 109px;
+        }
+
+        .icon2{
+            margin-left: 10px;
+            width: 12%;
+        }
+
+        #details{
+            width: 520px;
+            height: 450px;
+            margin-left: 30px;
+            /*border: 1px solid black;*/
+        }
+
+        #blob{
+            /* border: solid black 2px;*/
+            background: url("assets/images/blob.png");
+            /* background: mediumspringgreen;*/
+            height: 484px;
+            width: 505px;
+            margin-left: 562px;
+            margin-top: -485px;
+        }
+
+        /* #Projects{
+             justify-content: space-between;
+             !*align-items: center;*!
+             align-self: center;
+         }*/
+
+        #SquareContainer1{
+            position: relative;
+            top: -4px;
+            left: 40px;
+            height: 300px;
+            width: 1000px;
+            /* border: 3px solid black;*/
+            display: flex;
+            align-items: center;
+            /* flex-wrap: nowrap;*/
+            justify-content: space-around;
+        }
+
+        #SquareContainer1>div{
+            /*  border: 1px solid red;*/
+            height: 250px;
+            width: 300px;
+            border-radius: 20px;
+            background: orange;
+        }
+
+        /* #SquareContainer1>div:nth-child(1){
+             background: yellow;
+         }
+         #SquareContainer1>div:nth-child(2){
+             background: green;
+         }
+         #SquareContainer1>div:nth-child(3){
+             background: palevioletred;
+         }*/
+
+        #SquareContainer2{
+            position: relative;
+            top: -4px;
+            left: 40px;
+            height: 300px;
+            width: 1000px;
+            /* border: 3px solid black;*/
+            display: flex;
+            align-items: center;
+            /* flex-wrap: nowrap;*/
+            justify-content: space-around;
+        }
+
+        #SquareContainer2>div{
+            /* border: 1px solid red;*/
+            height: 250px;
+            width: 300px;
+            border-radius: 20px;
+            background: orange;
+        }
+
+        /* #SquareContainer2>div:nth-child(1){
+             background: yellow;
+         }
+         #SquareContainer2>div:nth-child(2){
+             background: green;
+         }
+         #SquareContainer2>div:nth-child(3){
+             background: palevioletred;
+         }*/
+
+        #icons{
+            position: relative;
+            top: -4px;
+            left: 40px;
+            height: 235px;
+            width: 1000px;
+           /* border: 3px solid black;*/
+        }
+
+        #certificates{
+            position: relative;
+            top: 2px;
+            left: 40px;
+            height: 300px;
+            width: 1000px;
+            /* border: 3px solid black;*/
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        #Skills>h3{
+            margin-left: 35px;
+        }
+
+        #languages{
+           /* border: 2px solid red;*/
+            height: 210px;
+            width: 475px;
+            margin-left: 10px;
+            margin-top: 10px;
+            /*position: relative;
+            justify-content: space-around;*/
+        }
+
+        #languages>div:nth-child(1){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /*border: 1px solid black;*/
+            border-radius: 100%;
+        }
+
+        #languages>div:nth-child(2){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 100px;
+            margin-top: -90px;
+        }
+
+        #languages>div:nth-child(3){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /*border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 200px;
+            margin-top: -90px;
+        }
+
+        #languages>div:nth-child(4){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /*border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 300px;
+            margin-top: -90px;
+        }
+
+        #languages>div:nth-child(5){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-top: 20px;
+        }
+
+        #languages>div:nth-child(6){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-top: -90px;
             margin-left: 100px;
         }
-        #introduction {
-            margin-top: 0;
-            margin-left: 700px;
 
+        #languages>div:nth-child(7){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-top: -90px;
+            margin-left: 200px;
         }
 
-        #Details{
+        #languages>div:nth-child(8){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-top: -90px;
+            margin-left: 300px;
+        }
+
+        #lan1{
+            width: 60%;
+            margin-left: 18px;
+            margin-top: 18px;
+        }
+
+        #lan2{
+            width: 70%;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        #lan3{
+            width: 70%;
+            margin-left: 14px;
+            margin-top: 14px;
+        }
+
+        #lan4{
+            width: 55%;
+            margin-left: 20px;
+            margin-top: 22px;
+        }
+
+        #lan5{
+            width: 70%;
+            margin-left: 12px;
+            margin-top: 16px;
+        }
+
+        #lan6{
+            width: 65%;
+            margin-left: 16px;
+            margin-top: 16px;
+        }
+
+        #lan7{
+            width: 82%;
+            margin-left: 8px;
+            margin-top: 24px;
+        }
+
+        #lan8{
+            width: 65%;
+            margin-left: 16px;
+            margin-top: 16px;
+        }
+
+        #tools{
+           /* border: 2px solid red;*/
+            height: 210px;
+            width: 475px;
+            margin-left: 510px;
+            margin-top: -213px;
+        }
+
+        #tools>div:nth-child(1){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /*  border: 1px solid black;*/
+            border-radius: 100%;
+        }
+
+        #tools>div:nth-child(2){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /*   border: 1px solid black;*/
+            border-radius: 100%;
             margin-left: 100px;
-
+            margin-top: -90px;
         }
 
-        #Blob{
-            margin-right: 0;
-            margin-top: 0;
-            margin-left: 150px;
+        #tools>div:nth-child(3){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /*  border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 200px;
+            margin-top: -90px;
         }
 
-        #Projects>h2{
+        #tools>div:nth-child(4){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 300px;
+            margin-top: -90px;
+        }
+
+        #tools>div:nth-child(5){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 400px;
+            margin-top: -90px;
+        }
+
+        #tools>div:nth-child(6){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /*  border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 0px;
+            margin-top: 22px;
+        }
+
+        #tools>div:nth-child(7){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /* border: 1px solid black;*/
+            border-radius: 100%;
             margin-left: 100px;
+            margin-top: -90px;
         }
 
-        #Skills{
-            margin-left: 100px;
+        #tools>div:nth-child(8){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /*  border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 200px;
+            margin-top: -90px;
         }
 
-        #Gallery>h2{
-            margin-left: 100px;
+        #tools>div:nth-child(9){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /*border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 300px;
+            margin-top: -90px;
         }
+
+        #tool1{
+            width: 60%;
+            margin-left: 18px;
+            margin-top: 18px;
+        }
+
+        #tool2{
+            width: 60%;
+            margin-left: 18px;
+            margin-top: 18px;
+        }
+
+       /* #tool3{
+
+        }*/
+
+        #tool4{
+            width: 60%;
+            margin-left: 18px;
+            margin-top: 18px;
+        }
+
+        #tool5{
+            width: 60%;
+            margin-left: 18px;
+            margin-top: 18px;
+        }
+
+        #tool6{
+            width: 60%;
+            margin-left: 18px;
+            margin-top: 18px;
+        }
+
+        #tool7{
+            width: 60%;
+            margin-left: 18px;
+            margin-top: 18px;
+        }
+
+        #tool8{
+            width: 100%;
+            margin-left: 1px;
+            margin-top: 20px;
+        }
+
+       /* #tool9{
+
+        }*/
+
+        #certificates>div{
+            height: 250px;
+            width: 390px;
+            border-radius: 20px;
+            background: orange;
+        }
+
+        #certi1{
+            height: 215px;
+            width: 336px;
+            margin-left: -494px;
+        }
+
+        #certi2{
+            height: 215px;
+            width: 337px;
+            margin-left: -496px;
+        }
+
+        /*  #certificate1{
+              height: 200px;
+              width: 250px;
+              border: 2px solid black;
+          }
+
+          #certificate2{
+              height: 200px;
+              width: 250px;
+              border: 2px solid black;
+          }*/
+
 
         #Gallerynav{
             position: relative;
-            top: 20px;
-            left: 20px;
+            top: -17px;
+            left: -74px;
             height: 50px;
             width: 650px;
-            /* border: 3px solid black;*/
+            /*   border: 3px solid black;*/
             display: flex;
             align-items: center;
             margin-left: 300px;
             justify-content: space-around;
         }
 
-        #Gallerynav>div{
-            width: 150px;
-            height: 30px;
-            /* text-align: center;*/
-
-        }
-        #Gallerynav>div:nth-child(1){
+        #Gallerynav>nav>ul{
+            position: absolute;
+            left: 63px;
+            top: 0px;
             background: orange;
-            text-align: center;
         }
 
-        #Gallerynav>div:nth-child(2){
-            background: orange;
-            text-align: center;
+        #Gallerynav>nav>ul>li{
+            font-size: 20px;
+            margin-left: 5px;
+            margin-right: 15px;
+            display: inline-block;
+            /*  font-weight: bold;*/
         }
 
-        #Gallerynav>div:nth-child(3){
-            background: orange;
-            text-align: center;
+        #Gallerynav>nav>ul>li>a{
+            text-decoration: none;
+            color: white;
         }
 
-        #Gallerynav>div:nth-child(4){
-            background: orange;
-            text-align: center;
-        }
+        /* #Gallerynav>div{
+             width: 150px;
+             height: 30px;
+             background: orange;
+             !* text-align: center;*!
 
+         }*/
+        /*   #Gallerynav>div:nth-child(1){
+               background: orange;
+               text-align: center;
+           }
+
+           #Gallerynav>div:nth-child(2){
+               background: orange;
+               text-align: center;
+           }
+
+           #Gallerynav>div:nth-child(3){
+               background: orange;
+               text-align: center;
+           }
+
+           #Gallerynav>div:nth-child(4){
+               background: orange;
+               text-align: center;
+           }
+   */
         #Galleryimages{
             position: relative;
-            top: 30px;
-            left: 30px;
+            top: 1px;
+            left: -102px;
             width: 1000px;
             height: 500px;
-            border: 1px solid black;
+            /*border: 1px solid black;*/
             display: grid;
             grid-template-rows: repeat(4,1fr);
             grid-template-columns: repeat(4,1fr);
@@ -132,7 +580,7 @@
         }
 
         #Galleryimages>div:nth-child(1){
-            background: url("assests/images/G1.jpeg");
+            background: url("assets/images/G1.jpeg");
             background-size: cover;
             background-position: center;
             grid-column: 1/2;
@@ -140,19 +588,19 @@
         }
 
         #Galleryimages>div:nth-child(2){
-            background: url("assests/images/G2.jpeg");
+            background: url("assets/images/G2.jpeg");
             background-size: cover;
             background-position: center;
         }
 
         #Galleryimages>div:nth-child(3){
-            background: url("assests/images/G3.jpeg");
+            background: url("assets/images/G3.jpeg");
             background-size: cover;
             background-position: center;
         }
 
         #Galleryimages>div:nth-child(4){
-            background: url("assests/images/G4.jpeg");
+            background: url("assets/images/G4.jpeg");
             background-size: cover;
             background-position: center;
             grid-column: 4/5;
@@ -160,7 +608,7 @@
         }
 
         #Galleryimages>div:nth-child(5){
-            background: url("assests/images/G5.jpg");
+            background: url("assets/images/G5.jpg");
             background-size: cover;
             background-position: center;
             grid-column: 2/4;
@@ -168,7 +616,7 @@
         }
 
         #Galleryimages>div:nth-child(6){
-            background: url("assests/images/G6.jpeg");
+            background: url("assets/images/G6.jpeg");
             background-size: cover;
             background-position: center;
             grid-column: 4/5;
@@ -176,7 +624,7 @@
         }
 
         #Galleryimages>div:nth-child(7){
-            background: url("assests/images/G7.jpg");
+            background: url("assets/images/G7.jpg");
             background-size: cover;
             background-position: center;
             grid-column: 1/2;
@@ -184,108 +632,186 @@
         }
 
         #Galleryimages>div:nth-child(8){
-            background: url("assests/images/G8.jpeg");
+            background: url("assets/images/G8.jpeg");
             background-size: cover;
             background-position: center;
         }
 
         #Galleryimages>div:nth-child(9){
-            background: url("assests/images/G9.jpeg");
+            background: url("assets/images/G9.jpeg");
             background-size: cover;
             background-position: center;
         }
 
-        #Projects>div>img{
-            width: 900px;
-            height:450px;
-            margin-left: 200px;
+        /* #conimage{
+            !* background: url(assets/images/conimage.PNG);
+             background-size: cover;*!
+             background-position: center;
+             height: 200px;
+             width: 258px;
+             border: 2px solid black;
+             margin-left: 790px;
+             margin-top: -42px;
+
+         }
+
+
+ */
+
+        #Contact>img{
+            height: 240px;
+            width: 400px;
+            margin-left: 800px;
+            margin-top: -33px;
         }
 
-        #Skills>div>img{
-            width: 900px;
+        #ContactDetails{
+            width: 400px;
+            height: 363px;
+            /*  border: 2px solid black;*/
+            margin-left: 20px;
+            margin-top: -159px;
         }
 
-        #certificates{
-            margin-left: 300px;
+        #conp{
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: -59px;
         }
 
-        /*#Contact>section>h2{
-            margin-left: 100px;
-        }*/
-
-        #Contact>section{
-            margin-left: 100px;
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
         }
 
-        #Contact>div>img{
-            margin-left: 700px;
-            margin-right: 100px;
-            width: 500px;
-            height: 400px;
-            box-shadow: darkgrey;
+        .iconsec{
+            width: 37px;
+            height: 203px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+            top: -6px;
+            right: -25px;
         }
+
+        .iconsec>div{
+            position: relative;
+            height: 45px;
+            width: 45px;
+            left: 0;
+            transition: all 2s;
+            background: orangered;
+            box-shadow: 0px 1px 4px 2px #282424;
+        }
+
+        .iconsec>div>i{
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            height: max-content;
+            width: max-content;
+            top: 0;
+            bottom: 0;
+            right: 10px;
+            margin: auto;
+        }
+
+        .mydetails{
+            width: 105px;
+            height: 203px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+            top: -208px;
+            right: -95px;
+        }
+
+        .mydetails>div{
+            position: relative;
+            height: 40px;
+            width: 275px;
+            left: 0;
+            transition: all 2s;
+            background: darkgray;
+            box-shadow: 0px 1px 4px 2px #282424;
+        }
+
+        .mydetails>div>li{
+            font-size: 15px;
+            color: red;
+            /* text-decoration: none;*/
+            margin-left: 10px;
+            margin-top:10px;
+        }
+
+        #seperator{
+            background: orangered;
+            width: 3px;
+            height: 335px;
+            margin-left: 430px;
+            margin-top: -385px;
+            margin-bottom: 50px;
+        }
+
+        #message{
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            margin-left: 460px;
+            margin-top: -245px
+        }
+
         footer{
-            height: 20px;
+            height: 30px;
             background: orange;
+            margin-top: 11px;
         }
     </style>
-
 </head>
-
 <body>
-
 <header>
-    <!--Main Topic-->
-    <h2>Portfolio</h2>
+    <section>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Galley</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
-    <!--Portfolio Navigations-->
-    <nav>
-        <ul>
-            <li><a href="#Home">Home</a> </li>
-            <li><a href="#About">About</a> </li>
-            <li><a href="#Skills">Education</a> </li>
-            <li><a href="#Gallery">Gallery</a> </li>
-            <li><a href="#Projects">Projects</a> </li>
-            <li><a href="#Contact">Contact</a> </li>
-        </ul>
-    </nav>
+        <div>
+            <p id="p1">Hi! I'm Kavindi Vithanage </p>
+            <p id="p2">Web Designer & Developer </p>
+
+            <img id="icon1" src="assets/images/icons/Insta.png" width="11%">
+            <a href=""></a>
+
+            <img class="icon2" src="assets/images/icons/Linkdin%20Icon.png" >
+            <a href=""></a>
+
+            <img class="icon2" src="assets/images/icons/Twit.png">
+            <a href=""></a>
+
+            <img class="icon2" src="assets/images/icons/Git.png">
+            <a href="https://github.com/Kavindi99"></a>
+        </div>
+    </section>
 </header>
-
 <main>
 
-    <section>
-
-        <dfn id="Home"></dfn>
-        <img src="assests/images/firstmyimage.jpeg">
-        <aside></aside> <!--Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage-->
-        <article> <!--The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable-->
-            <section id="introduction">
-                <h2>Hi! I'm Kavindi Vithanage</h2>
-                <h3>Web Designer & Developer </h3>
-
-                <img src="assests/images/Insta.png" width="5%">
-                <a href=""></a>
-
-                <img src="assests/images/Linkdin%20Icon.png" width="5%">
-                <a href=""></a>
-
-                <img src="assests/images/Twit.png" width="5%">
-                <a href=""></a>
-
-                <img src="assests/images/Git.png" width="5%">
-                <a href="https://github.com/Kavindi99"></a>
-            </section>
-        </article>
-
-    </section>
-
-    <section id="Aboutme">
-        <!--About Me-->
-
-        <div id="Details">
-
-            <h2>About Me</h2>
-
+    <section id="About">
+        <h2>About Me</h2>
+        <div id="details">
+            <br>
             <p> I'm Kavindi Vithanage a web designer & a developer based in Sri Lanka.These days I'm following graduate diploma in software engineering
                 at IJSE(Institute of Software Enginnering)<br><br>
                 I'm very passionated and dedicated to my works.Also I like to improve my knowledge & skills working with projects.
@@ -329,55 +855,96 @@
                         : Undergraduate
                     </li>
                 </ul>
-
-                <div id="Blob">
-                    <img src="assests/images/blob.png">
-                </div>
-
             </div>
-
         </div>
 
+        <div id="blob">
+
+        </div>
     </section>
 
     <section id="Projects">
-        <!--Projects-->
-
         <h2>Projects</h2>
+        <section id="SquareContainer1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
 
-        <!--Project Details-->
-        <div><img src="assests/images/projects.PNG"></div>
-
+        <section id="SquareContainer2">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
     </section>
 
     <section id="Skills">
-        <!--Skills-->
         <h2>Skills</h2>
-
         <h3>Languages & Tools</h3>
-        <!--Languages & Tools Icons-->
-        <div><img src="assests/images/icons.PNG"></div>
+        <section id="icons">
+            <div id="languages">
+                <div><img id="lan1" src="assets/images/icons/java.gif"></div>
+                <div><img id="lan2" src="assets/images/icons/mysql.png"></div>
+                <div><img id="lan3" src="assets/images/icons/Python.png"></div>
+                <div><img id="lan4" src="assets/images/icons/html.png"></div>
+                <div><img id="lan5" src="assets/images/icons/css.png"></div>
+                <div><img id="lan6" src="assets/images/icons/c++.png"></div>
+                <div><img id="lan7" src="assets/images/icons/php.png"></div>
+                <div><img id="lan8" src="assets/images/icons/js.png"></div>
+            </div>
 
-        <h3 id="certificates">Certificates</h3>
-        <!--Certificates-->
-        <div><img src="assests/images/certificates.PNG"></div>
+            <div id="tools">
+                <div><img id="tool1" src="assets/images/icons/intelij.png"></div>
+                <div><img id="tool2" src="assets/images/icons/figma.gif"></div>
+                <div><!--<img id="tool3" src="assets/images/icons/intelij.png">--></div>
+                <div><img id="tool4" src="assets/images/icons/vs.png"></div>
+                <div><img id="tool5" src="assets/images/icons/NetBeans_Logo.png"></div>
+                <div><img id="tool6" src="assets/images/icons/SceneBuilderLogo.png"></div>
+                <div><img id="tool7" src="assets/images/icons/Git.png"></div>
+                <div><img id="tool8" src="assets/images/icons/wix.png"></div>
+                <div><!--<img id="tool3" src="assets/images/icons/intelij.png">--></div>
+            </div>
+        </section>
 
+        <h3>Certificates</h3>
+        <section id="certificates">
+            <div></div>
+            <img id="certi1" src="assets/images/cyber.PNG">
+            <div></div>
+            <img id="certi2" src="assets/images/cyberessentials.PNG">
+        </section>
     </section>
 
     <section id="Gallery">
-
         <h2>Gallery</h2>
-
         <section id="Gallerynav">
-            <!--Gallery Navigations-->
-            <div>All</div>
+            <!-- <div>All</div>
             <div>Event</div>
             <div>Travel</div>
-            <div>Nature</div>
+            <div>Nature</div>-->
+            <!-- <nav>
+                 <ul>
+                     <div><li><a href="#">All</a></li></div>
+                     <div><li><a href="#">Event</a></li></div>
+                     <div><li><a href="#">Travel</a></li></div>
+                     <div><li><a href="#">Nature</a></li></div>
+
+                 </ul>
+             </nav>-->
+
+            <nav>
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Nature</a></li>
+
+                </ul>
+            </nav>
+
         </section>
 
         <section id="Galleryimages">
-            <!--Gallery Images Grid-->
             <div></div>
             <div></div>
             <div></div>
@@ -387,49 +954,70 @@
             <div></div>
             <div></div>
             <div></div>
-
         </section>
+
     </section>
 
     <section id="Contact">
-        <!--Contacts-->
-        <section>
+        <h2>Contact</h2>
+        <!--<div id="conimage">
+            <img src="assets/images/conimage.PNG" height="200" width="300">
+        </div>-->
 
-            <h2>Contact</h2>
+        <img src="assets/images/conimage.PNG">
 
-            <article> <p> Let's chat.
-                Tell me about your projects.
-            </p></article>
+        <div id="ContactDetails">
+            <p id="conp">Let's chat.<br>
+                Tell me about your project.</p>
 
-            <ul>
-                <!--Contact Details-->
-                <li>+9476 5262987</li>
-                <li>kavindivithanage23@gmail.com</li>
-                <li>Galle,Sri Lanka</li>
-            </ul>
+            <section class="iconsec">
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
 
-        </section>
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+            </section>
 
-        <section>
-            <!--Contact Details Place holders & Massages-->
-            <h3> <dfn id="connect">Connect Me</dfn> </h3>
+            <section class="mydetails">
+                <div>
+                    <li>+94 765262987</li>
+                </div>
+                <div>
+                    <li>kavindivithanage23@gmail.com</li>
+                </div>
+                <div>
+                    <li>Galle,Sri Lanka.</li>
+                </div>
+            </section>
+        </div>
 
+        <div id="seperator">
+        </div>
+
+        <div id="message">
+            <!-- <p>Full Name</p>
+
+             <p>E-mail</p>
+             <p>Message</p>-->
             <input type="text" placeholder="Full Name" size="20"><br>
             <input type="email" placeholder="E-mail" size="20"><br>
             <input type="text" placeholder="Message" size="40"><br>
             <input type="button" size="20" value="Send Message">
+        </div>
 
-        </section>
-
-        <div><img src="assests/images/contacts.jpg"></div>
+        <div></div>
 
     </section>
-</main>1
+
+</main>
 
 <footer>
 
 </footer>
-
 </body>
-
 </html>
