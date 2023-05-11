@@ -29,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
@@ -68,6 +68,7 @@
       <workItem from="1682216200727" duration="435000" />
       <workItem from="1682630942172" duration="72000" />
       <workItem from="1682631032644" duration="64000" />
+      <workItem from="1683773086598" duration="33000" />
     </task>
     <servers />
   </component>
