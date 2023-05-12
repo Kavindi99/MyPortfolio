@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case Four</title>
+  <link href="assets/normalize.css" rel="stylesheet">
+
+  <style>
+    div {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      border: #ff253a solid 2px;
+
+      animation: enlarge_and_opacity_tween;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+    }
+
+    @keyframes enlarge_and_opacity_tween {
+      from {
+        height: 50px;
+        width: 50px;
+        opacity: 100%;
+      }
+
+      to {
+        height: 200px;
+        width: 200px;
+        opacity: 0;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+<section>
+  <div></div>
+</section>
+</body>
+</html>

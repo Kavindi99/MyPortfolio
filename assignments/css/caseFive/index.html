@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Five</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+        section{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            height: 400px;
+            width: 1300px;
+            border: 3px solid black;
+            display: flex;
+           align-items: center;/*center*/
+           /* align-items: flex-start; *//*default -start point*/
+            /*align-items: flex-end; end point*/
+            /*justify-content: flex-start;*/
+           /* justify-content: center;*/
+            /*justify-content: flex-end;*/
+           /* justify-content: space-around;*/
+          /*justify-content: space-between;*/
+           /* justify-content: space-evenly;*/
+            /*flex-wrap: nowrap; default status*/
+          /* flex-wrap: wrap;*/
+           /* flex-direction: row-reverse; *//*default row*/
+            /*flex-direction: row;*/
+            /*flex-direction: column;*/
+           /* flex-direction: column-reverse;*/
+           /* flex-direction: inherit;*/
+          /*  flex-direction: initial;*/
+           /* flex-direction: revert;*/
+          /*  flex-direction: unset;*/
+        }
+        section>div{
+            border: 1px solid red;
+            height: 33.2%;
+            width: 100%;
+            flex-shrink: 1; /*default = 1*/
+            /*width: 300px;*/ /* flex-basis: ; == width*/
+           /* flex-basis: 100%;*/
+            /*flex-grow: 1;*//*default 0*/
+          /*  border-radius: 100%;*/
+        }
+
+        section>div:nth-child(1){
+            /*flex-grow: 1;*/
+            background: red;
+            text-align: center;
+            order: 3;
+           /* align-self: flex-start;*/
+
+        }
+
+        section>div:nth-child(2){
+            /*flex-grow: 2;*/
+            background: green;
+            text-align: center;
+            order: 1;
+          /*  align-self: center;*/
+        }
+
+        section>div:nth-child(3){
+            /*flex-grow: 1;*/
+            background: yellow;
+            text-align: center;
+            order: 4;
+           /* align-self: flex-end;*/
+        }
+
+        section>div:nth-child(4){
+            background: orange;
+            text-align: center;
+            order: 2;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</section>
+</body>
+</html>
