@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="keywords" content="Portfolio , Sri Lanka , IJSE , GDSE , Developer">
+    <meta name="description" content="This is for testing  my portfolio description.">
+    <meta name="author" content="IJSE">
+    <meta name="owner" content="Kavindi Vithanage">
+    <meta name="robots" content="index">
+    <meta name="theme-color" content="red">
+    <base href="localhost">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
+
+    <style>
+        header>section{
+            background: url("assets/images/homebackground.PNG");
+            width: 100%;
+            height: 510px;
+        }
+
+        h1{
+            margin-left: 20px;
+        }
+
+        h2{
+            margin-left: 20px;
+        }
+
+        header>section>nav>ul{
+            position: absolute;
+            right: 0px;
+            top: 15px;
+        }
+
+        header>section>nav>ul>li{
+            font-size: 20px;
+            margin-left: 5px;
+            margin-right: 15px;
+            display: inline-block;
+          /*  font-weight: bold;*/
+        }
+
+        header>section>nav>ul>li>a{
+            text-decoration: none;
+            color: white;
+        }
+
+        header>section>div{
+            background: url("assets/images/introbachground.PNG");
+            width: 410px;
+            height: 280px;
+            margin-left: 654px;
+            margin-top: 76px;
+        }
+
+        #p1{
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        #p2{
+            font-size: 26px;
+        }
+
+        #icon1{
+            margin-left: 15px;
+            margin-top: 109px;
+        }
+
+        .icon2{
+            margin-left: 10px;
+            width: 12%;
+        }
+
+        #details{
+            width: 520px;
+            height: 450px;
+            margin-left: 30px;
+            /*border: 1px solid black;*/
+        }
+
+        #blob{
+           /* border: solid black 2px;*/
+            background: url("assets/images/blob.png");
+           /* background: mediumspringgreen;*/
+            height: 484px;
+            width: 505px;
+            margin-left: 562px;
+            margin-top: -485px;
+        }
+
+       /* #Projects{
+            justify-content: space-between;
+            !*align-items: center;*!
+            align-self: center;
+        }*/
+
+        #SquareContainer1{
+            position: relative;
+            top: -4px;
+            left: 40px;
+            height: 300px;
+            width: 1000px;
+           /* border: 3px solid black;*/
+            display: flex;
+            align-items: center;
+           /* flex-wrap: nowrap;*/
+            justify-content: space-around;
+        }
+
+        #SquareContainer1>div{
+          /*  border: 1px solid red;*/
+            height: 250px;
+            width: 300px;
+            border-radius: 20px;
+            background: orange;
+        }
+
+       /* #SquareContainer1>div:nth-child(1){
+            background: yellow;
+        }
+        #SquareContainer1>div:nth-child(2){
+            background: green;
+        }
+        #SquareContainer1>div:nth-child(3){
+            background: palevioletred;
+        }*/
+
+        #SquareContainer2{
+            position: relative;
+            top: -4px;
+            left: 40px;
+            height: 300px;
+            width: 1000px;
+           /* border: 3px solid black;*/
+            display: flex;
+            align-items: center;
+           /* flex-wrap: nowrap;*/
+            justify-content: space-around;
+        }
+
+        #SquareContainer2>div{
+           /* border: 1px solid red;*/
+            height: 250px;
+            width: 300px;
+            border-radius: 20px;
+            background: orange;
+        }
+
+       /* #SquareContainer2>div:nth-child(1){
+            background: yellow;
+        }
+        #SquareContainer2>div:nth-child(2){
+            background: green;
+        }
+        #SquareContainer2>div:nth-child(3){
+            background: palevioletred;
+        }*/
+
+        #icons{
+            position: relative;
+            top: -4px;
+            left: 40px;
+            height: 235px;
+            width: 1000px;
+            border: 3px solid black;
+        }
+
+        #certificates{
+            position: relative;
+            top: 2px;
+            left: 40px;
+            height: 300px;
+            width: 1000px;
+           /* border: 3px solid black;*/
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        #Skills>h3{
+            margin-left: 35px;
+        }
+
+        #languages{
+            border: 2px solid red;
+            height: 210px;
+            width: 475px;
+            margin-left: 10px;
+            margin-top: 10px;
+            /*position: relative;
+            justify-content: space-around;*/
+        }
+
+        #languages>div:nth-child(1){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /*border: 1px solid black;*/
+            border-radius: 100%;
+        }
+
+        #languages>div:nth-child(2){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+           /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 100px;
+            margin-top: -90px;
+        }
+
+        #languages>div:nth-child(3){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /*border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 200px;
+            margin-top: -90px;
+        }
+
+        #languages>div:nth-child(4){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+            /*border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 300px;
+            margin-top: -90px;
+        }
+
+        #languages>div:nth-child(5){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+           /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-top: 20px;
+        }
+
+        #languages>div:nth-child(6){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+           /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-top: -90px;
+            margin-left: 100px;
+        }
+
+        #languages>div:nth-child(7){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+           /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-top: -90px;
+            margin-left: 200px;
+        }
+
+        #languages>div:nth-child(8){
+            height: 90px;
+            width: 90px;
+            background: darkgray;
+           /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-top: -90px;
+            margin-left: 300px;
+        }
+
+        #lan1{
+            width: 60%;
+            margin-left: 18px;
+            margin-top: 18px;
+        }
+
+        #lan2{
+            width: 70%;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        #lan3{
+            width: 70%;
+            margin-left: 14px;
+            margin-top: 14px;
+        }
+
+        #lan4{
+            width: 55%;
+            margin-left: 20px;
+            margin-top: 22px;
+        }
+
+        #lan5{
+            width: 70%;
+            margin-left: 12px;
+            margin-top: 16px;
+        }
+
+        #lan6{
+            width: 65%;
+            margin-left: 16px;
+            margin-top: 16px;
+        }
+
+        #lan7{
+            width: 82%;
+            margin-left: 8px;
+            margin-top: 24px;
+        }
+
+        #lan8{
+            width: 65%;
+            margin-left: 16px;
+            margin-top: 16px;
+        }
+
+        #tools{
+            border: 2px solid red;
+            height: 210px;
+            width: 475px;
+            margin-left: 510px;
+            margin-top: -213px;
+        }
+
+        #tools>div:nth-child(1){
+            height: 90px;
+            width: 90px;
+            background: orange;
+          /*  border: 1px solid black;*/
+            border-radius: 100%;
+        }
+
+        #tools>div:nth-child(2){
+            height: 90px;
+            width: 90px;
+            background: orange;
+         /*   border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 100px;
+            margin-top: -90px;
+        }
+
+        #tools>div:nth-child(3){
+            height: 90px;
+            width: 90px;
+            background: orange;
+          /*  border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 200px;
+            margin-top: -90px;
+        }
+
+        #tools>div:nth-child(4){
+            height: 90px;
+            width: 90px;
+            background: orange;
+           /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 300px;
+            margin-top: -90px;
+        }
+
+        #tools>div:nth-child(5){
+            height: 90px;
+            width: 90px;
+            background: orange;
+           /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 400px;
+            margin-top: -90px;
+        }
+
+        #tools>div:nth-child(6){
+            height: 90px;
+            width: 90px;
+            background: orange;
+          /*  border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 0px;
+            margin-top: 22px;
+        }
+
+        #tools>div:nth-child(7){
+            height: 90px;
+            width: 90px;
+            background: orange;
+           /* border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 100px;
+            margin-top: -90px;
+        }
+
+        #tools>div:nth-child(8){
+            height: 90px;
+            width: 90px;
+            background: orange;
+          /*  border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 200px;
+            margin-top: -90px;
+        }
+
+        #tools>div:nth-child(9){
+            height: 90px;
+            width: 90px;
+            background: orange;
+            /*border: 1px solid black;*/
+            border-radius: 100%;
+            margin-left: 300px;
+            margin-top: -90px;
+        }
+
+        #certificates>div{
+            height: 250px;
+            width: 390px;
+            border-radius: 20px;
+            background: orange;
+        }
+
+        #certi1{
+            height: 215px;
+            width: 336px;
+            margin-left: -494px;
+        }
+
+        #certi2{
+            height: 215px;
+            width: 337px;
+            margin-left: -496px;
+        }
+
+      /*  #certificate1{
+            height: 200px;
+            width: 250px;
+            border: 2px solid black;
+        }
+
+        #certificate2{
+            height: 200px;
+            width: 250px;
+            border: 2px solid black;
+        }*/
+
+
+        #Gallerynav{
+            position: relative;
+            top: -17px;
+            left: -74px;
+            height: 50px;
+            width: 650px;
+         /*   border: 3px solid black;*/
+            display: flex;
+            align-items: center;
+            margin-left: 300px;
+            justify-content: space-around;
+        }
+
+        #Gallerynav>nav>ul{
+            position: absolute;
+            left: 63px;
+            top: 0px;
+            background: orange;
+        }
+
+        #Gallerynav>nav>ul>li{
+            font-size: 20px;
+            margin-left: 5px;
+            margin-right: 15px;
+            display: inline-block;
+            /*  font-weight: bold;*/
+        }
+
+        #Gallerynav>nav>ul>li>a{
+            text-decoration: none;
+            color: white;
+        }
+
+        /* #Gallerynav>div{
+             width: 150px;
+             height: 30px;
+             background: orange;
+             !* text-align: center;*!
+
+         }*/
+     /*   #Gallerynav>div:nth-child(1){
+            background: orange;
+            text-align: center;
+        }
+
+        #Gallerynav>div:nth-child(2){
+            background: orange;
+            text-align: center;
+        }
+
+        #Gallerynav>div:nth-child(3){
+            background: orange;
+            text-align: center;
+        }
+
+        #Gallerynav>div:nth-child(4){
+            background: orange;
+            text-align: center;
+        }
+*/
+        #Galleryimages{
+            position: relative;
+            top: 1px;
+            left: -102px;
+            width: 1000px;
+            height: 500px;
+            /*border: 1px solid black;*/
+            display: grid;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(4,1fr);
+            margin-left: 150px;
+        }
+
+        #Galleryimages>div{
+            border: 1px solid grey;
+        }
+
+        #Galleryimages>div:nth-child(1){
+            background: url("assets/images/G1.jpeg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        #Galleryimages>div:nth-child(2){
+            background: url("assets/images/G2.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #Galleryimages>div:nth-child(3){
+            background: url("assets/images/G3.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #Galleryimages>div:nth-child(4){
+            background: url("assets/images/G4.jpeg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 4/5;
+            grid-row: 1/3;
+        }
+
+        #Galleryimages>div:nth-child(5){
+            background: url("assets/images/G5.jpg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 2/4;
+            grid-row: 2/4;
+        }
+
+        #Galleryimages>div:nth-child(6){
+            background: url("assets/images/G6.jpeg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 4/5;
+            grid-row: 3/5;
+        }
+
+        #Galleryimages>div:nth-child(7){
+            background: url("assets/images/G7.jpg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 1/2;
+            grid-row: 3/5;
+        }
+
+        #Galleryimages>div:nth-child(8){
+            background: url("assets/images/G8.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #Galleryimages>div:nth-child(9){
+            background: url("assets/images/G9.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+       /* #conimage{
+           !* background: url(assets/images/conimage.PNG);
+            background-size: cover;*!
+            background-position: center;
+            height: 200px;
+            width: 258px;
+            border: 2px solid black;
+            margin-left: 790px;
+            margin-top: -42px;
+
+        }
+
+
+*/
+
+        #Contact>img{
+            height: 240px;
+            width: 400px;
+            margin-left: 640px;
+            margin-top: -33px;
+        }
+
+        #ContactDetails{
+            width: 400px;
+            height: 363px;
+          /*  border: 2px solid black;*/
+            margin-left: 20px;
+            margin-top: -159px;
+        }
+
+        #conp{
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: -59px;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .iconsec{
+            width: 37px;
+            height: 203px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+            top: -6px;
+            right: -25px;
+        }
+
+       .iconsec>div{
+           position: relative;
+           height: 45px;
+           width: 45px;
+           left: 0;
+           transition: all 2s;
+           background: orangered;
+           box-shadow: 0px 1px 4px 2px #282424;
+       }
+
+        .iconsec>div>i{
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            height: max-content;
+            width: max-content;
+            top: 0;
+            bottom: 0;
+            right: 10px;
+            margin: auto;
+        }
+
+        .mydetails{
+            width: 105px;
+            height: 203px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+            top: -208px;
+            right: -95px;
+        }
+
+        .mydetails>div{
+            position: relative;
+            height: 40px;
+            width: 275px;
+            left: 0;
+            transition: all 2s;
+            background: darkgray;
+            box-shadow: 0px 1px 4px 2px #282424;
+        }
+
+        .mydetails>div>li{
+            font-size: 15px;
+            color: red;
+           /* text-decoration: none;*/
+            margin-left: 10px;
+            margin-top:10px;
+        }
+
+        #seperator{
+            background: orangered;
+            width: 3px;
+            height: 335px;
+            margin-left: 430px;
+            margin-top: -385px;
+            margin-bottom: 50px;
+        }
+
+        #message{
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            margin-left: 460px;
+            margin-top: -245px
+        }
+
+        footer{
+            height: 30px;
+            background: orange;
+            margin-top: 11px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <section>
+        <h1>Portfolio</h1>
+        <nav>
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Projects</a></li>
+               <li><a href="#">Skills</a></li>
+               <li><a href="#">Galley</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+        </nav>
+
+        <div>
+            <p id="p1">Hi! I'm Kavindi Vithanage </p>
+            <p id="p2">Web Designer & Developer </p>
+
+            <img id="icon1" src="assets/images/icons/Insta.png" width="11%">
+            <a href=""></a>
+
+            <img class="icon2" src="assets/images/icons/Linkdin%20Icon.png" >
+            <a href=""></a>
+
+            <img class="icon2" src="assets/images/icons/Twit.png">
+            <a href=""></a>
+
+            <img class="icon2" src="assets/images/icons/Git.png">
+            <a href="https://github.com/Kavindi99"></a>
+        </div>
+    </section>
+</header>
+<main>
+
+<section id="About">
+    <h2>About Me</h2>
+    <div id="details">
+        <br>
+    <p> I'm Kavindi Vithanage a web designer & a developer based in Sri Lanka.These days I'm following graduate diploma in software engineering
+        at IJSE(Institute of Software Enginnering)<br><br>
+        I'm very passionated and dedicated to my works.Also I like to improve my knowledge & skills working with projects.
+    </p>
+
+    <div id="Personal">
+        <!--Personal Information-->
+
+        <ul>
+            <li><bdi>Name</bdi>
+                : Thellambura Vithanage Sanduni Kavindi
+            </li>
+        </ul>
+
+        <ul>
+            <li><bdi>Contact</bdi>
+                : +94 765262987
+            </li>
+        </ul>
+
+        <ul>
+            <li><bdi>Based On</bdi>
+                : Galle, Sri Lanka
+            </li>
+        </ul>
+
+        <ul>
+            <li><bdi>Age</bdi>
+                : 23 years
+            </li>
+        </ul>
+
+        <ul>
+            <li><bdi>Email</bdi>
+                : kavindivithanage23@gmail.com
+            </li>
+        </ul>
+
+        <ul>
+            <li><bdi>Degree</bdi>
+                : Undergraduate
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <div id="blob">
+
+    </div>
+</section>
+
+<section id="Projects">
+    <h2>Projects</h2>
+    <section id="SquareContainer1">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section id="SquareContainer2">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</section>
+
+<section id="Skills">
+    <h2>Skills</h2>
+    <h3>Languages & Tools</h3>
+    <section id="icons">
+        <div id="languages">
+            <div><img id="lan1" src="assets/images/icons/java.gif"></div>
+            <div><img id="lan2" src="assets/images/icons/mysql.png"></div>
+            <div><img id="lan3" src="assets/images/icons/Python.png"></div>
+            <div><img id="lan4" src="assets/images/icons/html.png"></div>
+            <div><img id="lan5" src="assets/images/icons/css.png"></div>
+            <div><img id="lan6" src="assets/images/icons/c++.png"></div>
+            <div><img id="lan7" src="assets/images/icons/php.png"></div>
+            <div><img id="lan8" src="assets/images/icons/js.png"></div>
+        </div>
+
+        <div id="tools">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <h3>Certificates</h3>
+    <section id="certificates">
+        <div></div>
+        <img id="certi1" src="assets/images/cyber.PNG">
+        <div></div>
+        <img id="certi2" src="assets/images/cyberessentials.PNG">
+    </section>
+</section>
+
+<section id="Gallery">
+    <h2>Gallery</h2>
+    <section id="Gallerynav">
+        <!-- <div>All</div>
+        <div>Event</div>
+        <div>Travel</div>
+        <div>Nature</div>-->
+       <!-- <nav>
+            <ul>
+                <div><li><a href="#">All</a></li></div>
+                <div><li><a href="#">Event</a></li></div>
+                <div><li><a href="#">Travel</a></li></div>
+                <div><li><a href="#">Nature</a></li></div>
+
+            </ul>
+        </nav>-->
+
+        <nav>
+            <ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Nature</a></li>
+
+            </ul>
+        </nav>
+
+    </section>
+
+    <section id="Galleryimages">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</section>
+
+<section id="Contact">
+    <h2>Contact</h2>
+    <!--<div id="conimage">
+        <img src="assets/images/conimage.PNG" height="200" width="300">
+    </div>-->
+
+      <img src="assets/images/conimage.PNG">
+
+    <div id="ContactDetails">
+        <p id="conp">Let's chat.<br>
+        Tell me about your project.</p>
+
+        <section class="iconsec">
+            <div>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+
+            <div>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+        </section>
+
+        <section class="mydetails">
+            <div>
+                <li>+94 765262987</li>
+            </div>
+            <div>
+                <li>kavindivithanage23@gmail.com</li>
+            </div>
+            <div>
+                <li>Galle,Sri Lanka.</li>
+            </div>
+        </section>
+    </div>
+
+    <div id="seperator">
+    </div>
+
+    <div id="message">
+       <!-- <p>Full Name</p>
+
+        <p>E-mail</p>
+        <p>Message</p>-->
+        <input type="text" placeholder="Full Name" size="20"><br>
+        <input type="email" placeholder="E-mail" size="20"><br>
+        <input type="text" placeholder="Message" size="40"><br>
+        <input type="button" size="20" value="Send Message">
+    </div>
+
+    <div></div>
+
+</section>
+
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>
