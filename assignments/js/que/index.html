@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUE</title>
+    <script src="assets/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <style>
+
+        section{
+            width : 1000px;
+            height : 320px;
+           /* border : 1px solid red;*/
+            position : absolute;
+            left : 0;
+            right : 0;
+            top : 0 ;
+            bottom:0;
+            margin :auto;
+            display : flex;
+            align-items : center;
+
+        }
+
+        section>div{
+            border : 1px solid green;
+            height : 100px;
+            /*width : 100px;*/
+            flex-grow :1;
+
+        }
+
+        section>div:first-child{
+            align-self:flex-start;
+        }
+
+        section>div:last-child{
+            align-self:end;
+        }
+    </style>
+
+
+</head>
+<body>
+<h1>Java Script Queue</h1>
+
+<section id="section" >
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<script>
+    let colors = ["red","yellow","green","blue","deeppink","orange"]
+
+    setInterval(function (){
+        let divArray = document.querySelector("section").children;
+
+        for (let i =0; i < divArray.length ; i++){
+            divArray[i].style.background=colors[i];
+
+        }
+        let lastValue=colors.pop();
+        colors.unshift(lastValue);
+    },400);
+
+  /*  let divArray = document.querySelector("section").children;
+
+
+    for (let i =0; i < divArray.length ; i++){
+        console.log(divArray[i]);
+       /!* divArray[i].style.background='red';*!/ /!*all red*!/
+        divArray[i].style.background=colors[i]; /!*set colors array*!/
+
+    }*/
+
+
+    /*array related methods*/
+    // colors.push();
+    // colors.pop();
+    // colors.shift();
+    // colors.unshift();
+    // colors.slice();
+    // colors.splice();
+    // colors.length;
+    // colors.indexOf();
+    // colors.reverse();
+    // colors.sort();
+
+   /* let myArray = ["A","B","C","D","E","F","G","H"];
+    myArray.length;*/
+
+</script>
+</body>
+</html>
