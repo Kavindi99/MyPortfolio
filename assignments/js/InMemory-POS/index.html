@@ -557,21 +557,26 @@
 </script>
 
 <script>
+    //Create Array
+    let customerList =[];
+
     $("#btnSaveCustomer").click(function (){
 
-        let id = $("#cid").val();
-        let name =$("#Name").val();
-        let address =$("#Address").val() ;
-        let salary = $("#salary").val();
-
-        console .log(id+name+address+salary);
+        let cusId = $("#cid").val();
+        let cusName =$("#Name").val();
+        let cusAddress =$("#Address").val() ;
+        let cusSalary = $("#salary").val();
 
         let tBody=$("#tblCustomer");
 
-        let tr = $('<tr> <td>'+id+'</td>  <td>'+name+'</td>  <td>'+address+'</td> <td>'+salary+'</td> </tr>');
+        let tr = $('<tr> <td>'+cusId+'</td>  <td>'+cusName+'</td>  <td>'+cusAddress+'</td> <td>'+cusSalary+'</td> </tr>');
 
         //set the row to the table body
         tBody.append(tr);
+
+        //push for array indexes
+        customerList.push({id:cusId, name : cusName, address : cusAddress, salary : cusSalary})
+        console.log(customerList)
 
 
     });
