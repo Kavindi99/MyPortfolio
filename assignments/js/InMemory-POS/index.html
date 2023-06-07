@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
     <style>
         body{
             overflow-y: scroll;
@@ -519,6 +520,7 @@
     </section>
 </main>
 
+<script src="assets/js/jquery-3.7.0.min.js"></script>
 <script>
 
     document.getElementById("customers");
@@ -555,13 +557,14 @@
 </script>
 
 <script>
-    $("#btnSaveCustomer").click()(function (){
+    $("#btnSaveCustomer").click(function (){
 
         let id = $("#cid").val();
         let name =$("#Name").val();
         let address =$("#Address").val() ;
         let salary = $("#salary").val();
 
+        console .log(id+name+address+salary);
 
         let tBody=$("#tblCustomer");
 
