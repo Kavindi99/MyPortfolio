@@ -30,16 +30,20 @@
             <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="../../css-framework/pos/index.html" id="btnCustomer" >Customer</a>
+<!--                        <a class="nav-link text-white" aria-current="page" href="../../css-framework/pos/index.html" id="btnCustomer" >Customer</a>-->
+                            <a class="nav-link text-white" aria-current="page" href="#customer" id="btnCustomer" >Customer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="../../css-framework/pos/items.html" id="btnItem">Items</a>
+                      <!--  <a class="nav-link text-white" href="../../css-framework/pos/items.html" id="btnItem">Items</a>-->
+                        <a class="nav-link text-white"  href="#item" id="btnItem">Items</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="../../css-framework/pos/orders.html" id="btnOrder">Orders</a>
+                       <!-- <a class="nav-link text-white" href="../../css-framework/pos/orders.html" id="btnOrder">Orders</a>-->
+                        <a class="nav-link text-white" href="#orders" id="btnOrder">Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="../../css-framework/pos/placeOrder.html" id="btnPlaceOrder">Place Orders</a>
+                    <!--    <a class="nav-link text-white" href="../../css-framework/pos/placeOrder.html" id="btnPlaceOrder">Place Orders</a>-->
+                        <a class="nav-link text-white"  href="#placeOrder" id="btnPlaceOrder">Place Orders</a>
                     </li>
 
                 </ul>
@@ -530,28 +534,28 @@
 
     document.getElementById("btnCustomer").addEventListener("click", function(){
         document.getElementById("customers").style.display="block";
-        // document.getElementById("item").style.display="none";
+        document.getElementById("item").style.display="none";
         document.getElementById("orders").style.display="none";
         document.getElementById("placeOrder").style.display="none";
     });
 
     document.getElementById("btnItem").addEventListener("click", function(){
         document.getElementById("customers").style.display="none";
-        // document.getElementById("item").style.display="block";
+        document.getElementById("item").style.display="block";
         document.getElementById("orders").style.display="none";
         document.getElementById("placeOrder").style.display="none";
     });
     document.getElementById("btnOrder").addEventListener("click", function(){
         document.getElementById("customers").style.display="none";
         document.getElementById("item").style.display="none";
-        // document.getElementById("orders").style.display="block";
+        document.getElementById("orders").style.display="block";
         document.getElementById("placeOrder").style.display="none";
     });
     document.getElementById("btnPlaceOrder").addEventListener("click", function(){
         document.getElementById("customers").style.display="none";
         document.getElementById("item").style.display="none";
         document.getElementById("orders").style.display="none";
-        // document.getElementById("placeOrder").style.display="block";
+        document.getElementById("placeOrder").style.display="block";
     });
 
 </script>
@@ -569,15 +573,25 @@
 
         let tBody=$("#tblCustomer");
 
+        //load table data normally
         let tr = $('<tr> <td>'+cusId+'</td>  <td>'+cusName+'</td>  <td>'+cusAddress+'</td> <td>'+cusSalary+'</td> </tr>');
 
         //set the row to the table body
         tBody.append(tr);
 
+        //2nd method
+      /*  let row = <tr>
+            <td>$(cusId)</td>
+            <td>$(cusName)</td>
+            <td>$(cusAddress)</td>
+            <td>$(cusSalary)</td>
+        </tr>
+        $("#tblCustomer").append(row);*/
+
+
         //push for array indexes
         customerList.push({id:cusId, name : cusName, address : cusAddress, salary : cusSalary})
         console.log(customerList)
-
 
     });
 </script>
