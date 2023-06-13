@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <style>
+        body{
+            display: flex;
+           /* background-color: lightgoldenrodyellow;*/
+            background : url("assets/images/backgroundimage.jpg") ;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width : 100vw;
+        }
+
+        #Calculator{
+            position: relative;
+           /* background-color: l;*/
+            border : 1px solid black;
+            padding: 25px;
+           /* border-radius: 10px;*/
+            z-index: 4;
+        }
+
+        .values{
+            position: relative;
+            width: 505px;
+            height: 50px;
+          /*  background-color: lightgray;*/
+            border : 1px solid black;
+            font-size: 25px;
+            text-align: end;
+            padding: 4px;
+            margin-left: 90px;
+            margin-bottom: 6px;
+           /* border-radius: 4px;*/
+            z-index: 4;
+           /* box-shadow: 0 0 20px rgba( 74, 28, 0.15);*/
+            text-align: right;
+            margin-top: -54px;
+
+        }
+
+        #clear{
+            position: relative;
+            top: 100px;
+            left: 4px;
+            background-color: indianred;
+
+        }
+
+      /*  #clear:active{
+            background-color: white;
+        }*/
+
+        .buttons{
+            width: 600px;
+            height :400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        button{
+            background-color: white;
+            /* color: rgba(255,255,255);*/
+            border: none;
+            font-size: 30px;
+            height: 65px;
+            width: 142px;
+            margin: 4px;
+            top: auto;
+          /*  border : 1px solid black;*/
+           /* border-radius: 10px;*/
+            box-shadow: 0 0 5px rgba( 74, 28, 0.15);
+        }
+
+        #clear{
+            top : 0px;
+            width : 50px;
+            height :50px;
+            font-size: 25px;
+        }
+
+
+        button:hover{
+            background-color: cornflowerblue;
+        }
+
+        button:active{
+            background-color:cornflowerblue;
+        }
+
+        #equalsButton{
+            background-color: lightgreen;
+        }
+
+        #equalsButton:active{
+            background-color: goldenrod;
+        }
+
+
+        #addition{
+            background-color: lightpink;
+        }
+
+        #addition:active{
+            background-color:cornflowerblue;
+        }
+
+
+        #minus{
+            background-color: lightpink;
+        }
+
+        #minus:active{
+            background-color:cornflowerblue;
+        }
+
+        #divide{
+            background-color: lightpink;
+        }
+
+        #divide:active{
+            background-color:cornflowerblue;
+        }
+
+        #multiply{
+            background-color: lightpink;
+        }
+
+        #multiply:active{
+            background-color:cornflowerblue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<section id="Calculator">
+
+    <button id="clear">C</button>
+    <div class="values"></div>
+
+    <div class="buttons">
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button id="addition">+</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button id="minus">-</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button id="divide">/</button>
+
+        <button>0</button>
+        <button>.</button>
+        <button id="equalsButton">=</button>
+        <button id="multiply">*</button>
+    </div>
+
+
+</section>
+
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+
+<script>
+
+        let values=document.querySelector('.values');
+        let buttons=document.querySelectorAll('button');
+
+        let calcuationArray=[];
+        let calucations;
+
+        function calculate(button){
+        // console.log(button)
+        let value=button.textContent
+
+        if (value === "C"){
+        calcuationArray=[]
+        values.textContent='0'
+    }else if (value === "=") {
+        console.log(calucations)
+        values.textContent = eval(calucations)
+    }else {
+        calcuationArray.push(value)
+
+        calucations=calcuationArray.join('')
+
+        values.textContent=calucations
+    }
+
+    }
+        buttons.forEach(button => button.addEventListener('click',() => calculate(button)))
+
+
+</script>
+
+</body>
+</html>
