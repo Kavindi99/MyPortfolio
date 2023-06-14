@@ -977,6 +977,14 @@
             margin-bottom: 50px;
         }
 
+        form input{
+            border : 1px solid lightgray;
+        }
+
+      form input::placeholder{
+          color: orangered;
+      }
+
         #message{
             height: 200px;
             width: 300px;
@@ -985,6 +993,14 @@
             margin-top: -245px
         }
 
+        button:active{
+            color : yellow;
+        }
+
+        button:focus{
+            background : orange;
+            border : 1px solid orange;
+        }
         footer{
             height: 30px;
             background: orange;
@@ -1337,10 +1353,13 @@
 
              <p>E-mail</p>
              <p>Message</p>-->
+            <form action="">
             <input type="text" placeholder="Full Name" size="20"><br>
             <input type="email" placeholder="E-mail" size="20"><br>
             <input type="text" placeholder="Message" size="30"><br>
-            <input type="button" size="20" value="Send Message">
+           <!-- <input type="button" size="20" value="Send Message">-->
+                <button>Send Message</button>
+            </form>
         </div>
 
         <div></div>
@@ -1354,3 +1373,4 @@
 </footer>
 </body>
 </html>
+
