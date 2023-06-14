@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
 
     <style>
+
+      /*  body{
+            height : 100vh;
+            width : 100vw;
+        }*/
         header>section{
             background: url("assets/images/homebackground.PNG");
             width: 100%;
@@ -26,10 +31,16 @@
 
         h1{
             margin-left: 20px;
+            margin-top : 0;
+            font-size : 60px;
         }
 
         h2{
             margin-left: 20px;
+            /*font-size : 35px;*/
+        }
+        .topics{
+            font-size : 35px;
         }
 
         header>section>nav>ul{
@@ -55,14 +66,18 @@
             background: url("assets/images/introbachground.PNG");
             width: 410px;
             height: 280px;
-            margin-left: 700px;
-            margin-top: 76px;
+            margin-left: 719px;
+            margin-top: 45px;
+         /*   border : 1px solid black;*/
+            border-radius: 20px;
         }
 
         #p1{
             font-size: 30px;
             font-weight: bold;
-
+          /*  margin-top : 100px;
+            margin-left: 719px;
+*/
         }
 
         #p2{
@@ -124,6 +139,32 @@
             background: orange;
         }
 
+        #SquareContainer1>div>div:nth-child(1){
+            height: 200px;
+            width: 300px;
+            border-radius: 20px;
+            /*background: orange;*/
+           /* border: 2px solid red;*/
+        }
+
+      #Ui{
+          background :url("assets/images/projects/ui.jpg");
+          background-size : cover;
+          background-position: center;
+      }
+
+      #Application{
+          background :url("assets/images/projects/application.jpeg");
+          background-size : cover;
+          background-position: center;
+      }
+
+      #Web{
+          background :url("assets/images/projects/web.jpg");
+          background-size : cover;
+          background-position: center;
+      }
+
         /* #SquareContainer1>div:nth-child(1){
              background: yellow;
          }
@@ -133,6 +174,16 @@
          #SquareContainer1>div:nth-child(3){
              background: palevioletred;
          }*/
+
+       /*  #SquareContainer1>div>div:nth-child(2){
+             border : 1px solid black;
+             width  : 290px;
+             height : 40px;
+         }
+*/
+      #SquareContainer1>div>div:nth-child(2)>h2{
+          margin-top : 8px;
+      }
 
         #SquareContainer2{
             position: relative;
@@ -150,14 +201,45 @@
 
         #SquareContainer2>div{
             /* border: 1px solid red;*/
-            height: 250px;
-            width: 300px;
+            height: 200px;
+            width: 290px;
             border-radius: 20px;
             background: orange;
         }
 
+      #SquareContainer2>div>div:nth-child(1){
+          height: 200px;
+          width: 290px;
+          border-radius: 20px;
+          /*   background: orange;*/
+       /*   border: 2px solid red;*/
+          margin-left : 30px;
+          margin-top: 30px;
+      }
+
+      #firstproject{
+          background: url("assets/images/projects/blueOceanHotel.PNG");
+          background-size : cover;
+          background-position: center;
+      }
+
+      #secondproject{
+          background: url("assets/images/projects/TeaFactory.PNG");
+          background-size : cover;
+          background-position: center;
+      }
+
+      #thirdproject{
+          background: url("assets/images/projects/restora.PNG");
+          background-size : cover;
+          background-position: center;
+
+      }
+
         #Assignments>h3{
             text-align: center;
+            font-size : 25px;
+            font-style: oblique;
         }
 
         #CssAssignments{
@@ -168,7 +250,7 @@
             align-items: center;
             justify-content: space-around;
            /* justify-content : space-between;*/
-            margin-left:100px;
+            margin-left:150px;
 
 
         }
@@ -178,7 +260,7 @@
             height: 150px;
             width: 150px;
             border-radius: 20px;
-            background: orange;
+            background: yellow;
             text-align:center;
         }
 
@@ -189,7 +271,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-             margin-left:100px;
+             margin-left:150px;
 
         }
 
@@ -219,7 +301,7 @@
             height:150px;
             width:  300px;
             border-radius: 20px;
-            background: orange;
+            background: yellow;
         }
 
 
@@ -231,7 +313,6 @@
             align-items: center;
             justify-content: space-around;
             margin-left:150px;
-
         }
 
         #js>div{
@@ -257,7 +338,7 @@
             height:150px;
             width:  300px;
             border-radius: 20px;
-            background: orange;
+            background: yellow;
         }
 
 
@@ -299,7 +380,10 @@
         }
 
         #Skills>h3{
-            margin-left: 35px;
+            margin-left: 100px;
+            font-size : 25px;
+            font-style: oblique;
+            /*text-align: center;*/
         }
 
         #languages{
@@ -927,7 +1011,7 @@
 <main>
 
     <section id="About">
-        <h2>About Me</h2>
+        <h2 class="topics">About Me</h2>
         <div id="details">
             <br>
             <p> I'm Kavindi Vithanage a web designer & a developer based in Sri Lanka.These days I'm following graduate diploma in software engineering
@@ -982,23 +1066,38 @@
     </section>
 
     <section id="Projects">
-        <h2>Projects</h2>
+        <h2  class="topics">Projects</h2>
         <section id="SquareContainer1">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <div id="Ui"></div>
+                <div><h2>UI Designing</h2></div>
+            </div>
+            <div>
+                <div id="Application"></div>
+                <div><h2>Application Development</h2></div>
+            </div>
+            <div>
+                <div id="Web"></div>
+                <div><h2>Web Development</h2></div>
+            </div>
         </section>
 
         <section id="SquareContainer2">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <div id="firstproject"></div>
+            </div>
+            <div>
+                <div id="secondproject"></div>
+            </div>
+            <div>
+                <div id="thirdproject"></div>
+            </div>
         </section>
     </section>
 
     <!--Assingments linked-->
     <section id="Assignments">
-        <h2>Assignments</h2>
+        <h2  class="topics">Assignments</h2>
         <h3>CSS</h3>
         <section id="CssAssignments">
 
@@ -1093,7 +1192,7 @@
     </section>
 
     <section id="Skills">
-        <h2>Skills</h2>
+        <h2  class="topics">Skills</h2>
         <h3>Languages & Tools</h3>
         <section id="icons">
             <div id="languages">
@@ -1130,7 +1229,7 @@
     </section>
 
     <section id="Gallery">
-        <h2>Gallery</h2>
+        <h2  class="topics">Gallery</h2>
         <section id="Gallerynav">
             <!-- <div>All</div>
             <div>Event</div>
@@ -1173,7 +1272,7 @@
     </section>
 
     <section id="Contact">
-        <h2>Contact</h2>
+        <h2  class="topics">Contact</h2>
         <!--<div id="conimage">
             <img src="assets/images/conimage.PNG" height="200" width="300">
         </div>-->
