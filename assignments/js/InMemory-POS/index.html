@@ -78,7 +78,7 @@
 <main class="container" id="customers">
     <section class="row p-4 m-0 object-fit-contain" id="customer">
         <h2 class="text-success pt-5 m-lg-2">Manage Customers</h2>
-        <section class="col-12 col-sm-12 col-md-12 col-lg-4  border rounded object-fit-contain" >
+        <section class="col-12 col-sm-12 col-md-12 col-lg-4  m-3  border rounded object-fit-contain" >
             <h5 class="text-dark text-center m-lg-3 pt-5" >Add Customer</h5>
             <form>
                 <div class="form-floating mb-3 mt-2">
@@ -113,7 +113,7 @@
 
         </section>
 
-        <section  class="col-12 col-sm-12 col-md-12 col-lg-7  border rounded object-fit-contain overflow-scroll" >
+        <section  class="col-12 col-sm-12 col-md-12 col-lg-7  m-3  border rounded object-fit-contain overflow-scroll" >
             <h5 class="text-dark text-center m-lg-3 pb-3" >Customer Details</h5>
             <table class="table table-light table-striped">
                 <thead>
@@ -186,7 +186,7 @@
 <main class="container" id="item">
     <section class="row p-4 m-0 object-fit-contain" id="Items">
         <h2 class="text-success pt-5 m-lg-2">Manage Items</h2>
-        <section class="col-12 col-sm-12 col-md-12 col-lg-4 border-dark m-3 border rounded object-fit-contain" >
+        <section class="col-12 col-sm-12 col-md-12 col-lg-4  m-3 border rounded object-fit-contain" >
             <h5 class="text-dark text-center m-lg-3 pt-5" >Add Items</h5>
             <form>
                 <div class="form-floating mb-3 mt-2">
@@ -229,7 +229,7 @@
 
         </section>
 
-        <section class="col-12 col-sm-12 col-md-12 col-lg-7 border-dark m-3 border rounded object-fit-contain overflow-scroll ">
+        <section class="col-12 col-sm-12 col-md-12 col-lg-7 m-3 border rounded object-fit-contain overflow-scroll ">
             <h5 class="text-dark text-center m-lg-3 pb-3" >Item Details</h5>
             <table class="table table-light table-striped">
                 <thead>
@@ -423,7 +423,7 @@
             <div class="col">
                 <div class="input-group">
                     <span class="input-group-text">Customer Name</span>
-                    <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    <input class="form-control" type="text" id="cusNamePlaceOrder" placeholder="" aria-label="Disabled input example" disabled>
                 </div>
             </div>
 
@@ -446,28 +446,28 @@
             <div class="col">
                 <div class="input-group">
                     <span class="input-group-text">Description</span>
-                    <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    <input class="form-control"  id="itemDescPlaceOrder" type="text" placeholder="" aria-label="Disabled input example" disabled>
                 </div>
             </div>
 
             <div class="col">
                 <div class="input-group">
                     <span class="input-group-text">Qty On Hand</span>
-                    <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    <input class="form-control" id="itemQtyPlaceOrder" type="text" placeholder="" aria-label="Disabled input example" disabled>
                 </div>
             </div>
 
             <div class="col">
                 <div class="input-group">
                     <span class="input-group-text">Unit Price</span>
-                    <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    <input class="form-control" id="itemUnitPricePlaceOrder" type="text" placeholder="" aria-label="Disabled input example" disabled>
                 </div>
             </div>
 
             <div class="col">
                 <div class="input-group">
                     <span class="input-group-text">Quantity</span>
-                    <input class="form-control" type="text" placeholder="" aria-label="Disabled input example">
+                    <input class="form-control"  id="itemQauntityPlaceOrder" type="text" placeholder="" aria-label="Disabled input example">
                 </div>
             </div>
 
@@ -476,7 +476,7 @@
         <div class="row mt-3">
             <div class="col-4"></div>
             <div class="column-gap-0">
-                <button type="button" class="btn btn-outline-success">Add to Cart</button>
+                <button type="button" id="btnSaveOrder" class="btn btn-outline-success">Add to Cart</button>
                 <button type="button" class="btn btn-outline-warning">Clear</button>
             </div>
         </div>
@@ -502,7 +502,7 @@
                     <!-- <th style="background-color: lightgoldenrodyellow" scope="col">Action</th>-->
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="tblPlaceOrder">
 
                 <tr>
                     <th scope="col">I001</th>
@@ -609,6 +609,7 @@
 
 <script src="assets/js/customerManage.js"></script>
 <script src="assets/js/itemsManage.js"></script>
+<script src="assets/js/placeOrderManage.js"></script>
 
 </body>
 </html>
