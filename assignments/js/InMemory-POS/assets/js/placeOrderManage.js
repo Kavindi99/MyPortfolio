@@ -23,9 +23,11 @@ $('#itemCodeList').click(function (){
 
 });
 
+//save orders
 let  cartList =[];
 let amountOfTotal=0;
-//add to cart
+
+// btn add to cart
 $('#btnSaveOrder').click(function (){
 
     let itemCodeOrder = $("#itemCodeList").val();
@@ -85,3 +87,4 @@ $('#btnPurchaseFinalOrder').click(function (){
     console.log(finalOrderList);
 
 });
+
