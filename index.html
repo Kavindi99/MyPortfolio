@@ -23,10 +23,13 @@
             width : 100vw;
         }*/
         header>section{
-            background: url("assets/images/homebackground.PNG");
-            width: 100%;
-            height: 510px;
-            /*  background-repeat: no-repeat;*/
+           /* background: url("assets/images/homebackground.PNG");*/
+            background : url("assets/images/test.png");
+            /*width: 100%;
+            height: 510px;*/
+          /*  background-repeat: no-repeat;*/
+            width : 100vw;
+            height : 100vh;
         }
 
         h1{
@@ -70,7 +73,7 @@
             margin-left: 5px;
             margin-right: 15px;
             display: inline-block;
-            /*  font-weight: bold;*/
+            /*font-weight: bold;*/
         }
 
         header>section>nav>ul>li>a{
@@ -78,37 +81,82 @@
             color: white;
         }
 
+        #proPic{
+            width: 415px;
+            height: 495px;
+            margin-left: 100px;
+           /* margin-top: 145px;*/
+            border : 1px solid black;
+            border-radius: 20px;
+            margin-left :45px;
+            margin-top : 10px;
+        }
+
         header>section>div{
-            background: url("assets/images/introbachground.PNG");
-            width: 410px;
-            height: 280px;
-            margin-left: 719px;
-            margin-top: 45px;
-         /*   border : 1px solid black;*/
+           /* background: url("assets/images/introbachground.PNG");*/
+            width: 600px;
+          /*  height: 280px;*/
+            height: 230px;
+          /*  margin-left: 719px;*/
+            margin-left: 650px;
+          /*  margin-top: 45px;*/
+            margin-top: -400px;
+          /*  border : 1px solid black;*/
             border-radius: 20px;
         }
 
-        #p1{
-            font-size: 30px;
+        #name{
+            font-size: 50px;
             font-weight: bold;
           /*  margin-top : 100px;
             margin-left: 719px;
 */
         }
 
-        #p2{
-            font-size: 26px;
+        #sentence{
+            font-size: 40px;
+            font-style : oblique;
+            margin-bottom :10px;
         }
 
-        #icon1{
+        #iconContainer{
+            position: relative;
+            /*top: -4px;*/
+            left: 100px;
+            height: 100px;
+            width: 400px;
+           /* border: 3px solid black;*/
+            display: flex;
+            align-items: center;
+            /* flex-wrap: nowrap;*/
+            justify-content: space-around;
+            margin-left: 545px;
+            margin-top: -42px;
+            bottom : 30px;
+            gap : 3px;
+        }
+
+      #icon1{
+          margin-left:15px;
+          width: 13%;
+          height : 50%;
+      }
+
+      .icon2{
+          width: 16%;
+          height : 65%;
+      }
+
+
+       /* #icon1{
             margin-left: 15px;
-            margin-top: 109px;
+            margin-top: 2px;
         }
 
         .icon2{
             margin-left: 10px;
             width: 12%;
-        }
+        }*/
 
         #details{
             width: 520px;
@@ -259,107 +307,45 @@
             font-style: oblique;
         }
 
-       /* #Assignments>h3:before{
-            content : "😊";
-        }*/
+      #AssigmentContainer{
+          position: relative;
+          top: -4px;
+          left: 40px;
+          height: 400px;
+          width: 1300px;
+          border: 3px solid black;
+          display: flex;
+          align-items: center;
+          /* flex-wrap: nowrap;*/
+          justify-content: space-around;
+          margin-left:-15px;
+      }
 
-        #CssAssignments{
-            /*border: 1px solid red;*/
-            height: 150px;
-            width: 1000px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-           /* justify-content : space-between;*/
-            margin-left:150px;
+      #AssigmentContainer>div{
+        /*  border: 1px solid red;*/
+          background : linear-gradient(to right, yellow, orange );
+          height: 350px;
+          width: 240px;
+          border-radius: 20px;
+      }
 
-        }
+      #AssigmentContainer>div>div:nth-child(1){
+          height: 250px;
+          width: 240px;
+          border-radius: 20px;
+        /*  background: orange;*/
+           border: 1px solid red;
+      }
 
-        #CssAssignments>div{
-          /*  border: 1px solid red;*/
-            height: 150px;
-            width: 150px;
-            border-radius: 20px;
-            background: yellow;
-            text-align:center;
-        }
+      #AssigmentContainer>div>div:nth-child(2)>h2{
+          margin-top : 8px;
+          text-align : center;
+      }
 
-        #animations{
-           /* border: 1px solid red;*/
-            height: 150px;
-            width: 1000px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-             margin-left:150px;
+      /* #Assignments>h3:before{
+           content : "😊";
+       }*/
 
-        }
-
-        #animations>div{
-            /*border: 1px solid red;*/
-            height: 150px;
-            width: 200px;
-            border-radius: 20px;
-            background: orange;
-        }
-
-        #css-frameworks{
-           /* border: 1px solid red;*/
-            height: 150px;
-            width: 1000px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-left:150px;
-
-
-        }
-
-
-        #css-frameworks>div{
-           /* border: 1px solid red;*/
-            height:150px;
-            width:  300px;
-            border-radius: 20px;
-            background: yellow;
-        }
-
-
-        #js{
-           /* border: 1px solid red;*/
-            height: 150px;
-            width: 1000px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-left:150px;
-        }
-
-        #js>div{
-            /*border: 1px solid red;*/
-            height:150px;
-            width:  170px;
-            border-radius: 20px;
-            background: orange;
-        }
-
-        #transitions{
-           /* border: 1px solid red;*/
-            height: 150px;
-            width: 1000px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-left:150px;
-        }
-
-        #transitions>div{
-            /*border: 1px solid red;*/
-            height:150px;
-            width:  300px;
-            border-radius: 20px;
-            background: yellow;
-        }
 
 
 
@@ -969,7 +955,6 @@
             right: -95px;
         }
 
-
         .mydetails>div{
             position: relative;
             height: 40px;
@@ -979,7 +964,6 @@
             background: darkgray;
             box-shadow: 0px 1px 4px 2px #282424;
         }
-
 
 
         .mydetails>div>li{
@@ -1047,10 +1031,16 @@
             </ul>
         </nav>
 
-        <div>
-            <p id="p1">Hi! I'm Kavindi Vithanage </p>
-            <p id="p2">Web Designer & Developer </p>
+        <div id="proPic">
 
+        </div>
+
+        <div>
+            <h1 id="name">Hi! I'm Kavindi Vithanage </h1>
+            <h2 id="sentence">Web Designer & Developer </h2>
+        </div>
+
+        <div id="iconContainer">
             <img id="icon1" src="assets/images/icons/Insta.png" width="11%">
             <a href=""></a>
 
@@ -1156,95 +1146,30 @@
     <!--Assingments linked-->
     <section id="Assignments">
         <h2  class="topics">Assignments</h2>
-        <h3>CSS</h3>
-        <section id="CssAssignments">
 
-        <div >
-           <!-- <h2>Case One</h2>-->
-            <a href="assignments/css/case1/index.html"><h2>Case One</h2></a>
-        </div>
-
-        <div>
-            <a href="assignments/css/caseTwo/index.html"><h2>Case Two</h2></a>
-            <a href="assignments/css/caseTwo/indexnew.html"><h2>Case Two New</h2></a>
-        </div>
-
-        <div>
-            <a href="assignments/css/caseThree/index.html"><h2>Case Three</h2></a>
-        </div>
-
-        <div>
-            <a href="assignments/css/caseFour/index.html"><h2>Case Four</h2></a>
-        </div>
-
+        <!--for assignment topics-->
+        <section id="AssigmentContainer">
             <div>
-                <a href="assignments/css/caseFive/index.html"><h2>Case Five</h2></a>
+                <div id="CSS"></div>
+                <div><a href="pages/cssAssignments.html"><h2>CSS</h2></a></div>
+            </div>
+            <div>
+                <div id="AnimationsAssignments"></div>
+                <div><a href="pages/animations.html"><h2>Animations</h2></a></div>
+            </div>
+            <div>
+                <div id="CssFrameworks"></div>
+                <div><a href="pages/css-frameworks.html"><h2>Css - Frameworks</h2></a></div>
+            </div>
+            <div>
+                <div id="JSAssignments"></div>
+                <div><a href="pages/js.html"><h2>JS</h2></a></div>
+            </div>
+            <div>
+                <div id="TransitionsAssignments"></div>
+                <div><a href="pages/transitions.html"><h2>Transitions</h2></a></div>
             </div>
 
-            <div>
-                <a href="assignments/css/caseFive&Six/index.html"><h2>Case Five & Six</h2></a>
-                <a href="assignments/css/caseFive&Six/index2.html"><h2>Case Five & Six</h2></a>
-            </div>
-
-        </section>
-
-        <h3>Animations</h3>
-        <section id="animations">
-        <div>
-            <a href="assignments/animations/caseThree/index.html"><h2>Case Three</h2></a>
-        </div>
-        <div>
-            <a href="assignments/animations/caseFour/index.html"><h2>Case Four</h2></a>
-        </div>
-        <div>
-            <a href="assignments/animations/caseFive/index.html"><h2>Case Five</h2></a>
-        </div>
-        <div>
-            <a href="assignments/animations/caseSix/index.html"><h2>Case Six</h2></a>
-        </div>
-
-        </section>
-
-        <h3>Css-Frameworks</h3>
-        <section id="css-frameworks">
-        <div>
-            <a href="assignments/css-framework/pos/index.html"><h2>POS</h2></a>
-        </div>
-        </section>
-
-        <h3>JS</h3>
-        <section id="js">
-        <div>
-            <a href="assignments/js/knight/index.html"><h2>KNIGHT</h2></a>
-        </div>
-
-        <div>
-            <a href="assignments/js/que/index.html"><h2>QUE</h2></a>
-        </div>
-
-        <div>
-            <a href="assignments/js/spa/index.html"><h2>SPA</h2></a>
-        </div>
-
-        <div>
-            <a href="assignments/js/InMemory-POS/index.html"><h2>InMemory-POS</h2></a>
-        </div>
-
-            <div>
-                <a href="assignments/js/cal/index.html"><h2>CAL</h2></a>
-            </div>
-
-        </section>
-
-        <h3>Transitions</h3>
-        <section id="transitions">
-        <div>
-            <a href="assignments/transitions/caseOne/index.html"><h2>Case One</h2></a>
-        </div>
-
-        <div>
-            <a href="assignments/transitions/caseTwo/index.html"><h2>Case Two</h2></a>
-        </div>
         </section>
 
     </section>
