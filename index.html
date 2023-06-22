@@ -22,7 +22,7 @@
             height : 100vh;
             width : 100vw;
         }*/
-        header>section{
+        #Home{
            /* background: url("assets/images/homebackground.PNG");*/
             background : url("assets/images/test.png");
             /*width: 100%;
@@ -62,13 +62,13 @@
 
         }
 
-        header>section>nav>ul{
+        header>nav>ul{
             position: absolute;
             right: 0px;
             top: 15px;
         }
 
-        header>section>nav>ul>li{
+        header>nav>ul>li{
             font-size: 20px;
             margin-left: 5px;
             margin-right: 15px;
@@ -76,7 +76,7 @@
             /*font-weight: bold;*/
         }
 
-        header>section>nav>ul>li>a{
+        header>nav>ul>li>a{
             text-decoration: none;
             color: white;
         }
@@ -88,12 +88,12 @@
           left: 0;
           bottom: 0;
           right: 0;
-          background: #000000;
+          background: white;
       }
 
       #loader > div {
-          width: 500px;
-          height: 500px;
+          width: 200px;
+          height: 300px;
           position: absolute;
           top: 0;
           left: 0;
@@ -116,7 +116,7 @@
             margin-top : 10px;
         }
 
-        header>section>div{
+        #Intoduce{
            /* background: url("assets/images/introbachground.PNG");*/
             width: 600px;
           /*  height: 280px;*/
@@ -1042,28 +1042,32 @@
 <body>
 
 <header>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Gallery">Galley</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="loader">
+        <div></div>
+    </div>
+</header>
+
+
+<main>
     <section id="Home">
         <h1>Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Gallery">Galley</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div id="loader">
-            <div></div>
-        </div>
 
         <div id="proPic">
 
         </div>
 
-        <div>
+        <div id="Intoduce">
             <h1 id="name">Hi! I'm Kavindi Vithanage </h1>
             <h2 id="sentence">Web Designer & Developer </h2>
         </div>
@@ -1082,9 +1086,6 @@
             <a href="https://github.com/Kavindi99"></a>
         </div>
     </section>
-</header>
-
-<main>
 
     <section id="About">
         <h2 class="topics">About Me</h2>
@@ -1342,17 +1343,6 @@
 
         <div></div>
 
-        <a href="https://www.youtube.com/watch?v=LxDNf4QYvmQ"></a>
-        <a href="https://www.youtube.com/watch?v=LxDNf4QYvmQ"></a>
-        <a href="https://www.youtube.com/watch?v=LxDNf4QYvmQ"></a>
-        <a href="https://www.youtube.com/watch?v=LxDNf4QYvmQ"></a>
-        <a href="https://www.youtube.com/watch?v=LxDNf4QYvmQ"></a>
-        <a href="https://www.youtube.com/watch?v=LxDNf4QYvmQ"></a>
-        <a href="https://www.youtube.com/watch?v=LxDNf4QYvmQ"></a>
-        <a href="https://www.youtube.com/watch?v=LxDNf4QYvmQ"></a>
-
-
-
 
     </section>
 
@@ -1373,16 +1363,6 @@
         loader.style.display = 'none';
     });
 
-
-    // // in addition to that if you want to run a code as soon as the DOM created
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     // you can write anything you want here, and it will run just after creating the DOM object
-    //     let h1 = document.createElement("h1");
-    //     h1.textContent = "HI there";
-    //
-    //     let body=document.querySelector("body");
-    //     body.prepend(h1);
-    // });
 </script>
 </body>
 </html>
