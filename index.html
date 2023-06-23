@@ -15,16 +15,18 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
-
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
     <style>
 
       /*  body{
             height : 100vh;
             width : 100vw;
         }*/
+
         #Home{
            /* background: url("assets/images/homebackground.PNG");*/
-            background : url("assets/images/test.png");
+           /* background : url("assets/images/test.png");*/
+            background : url("assets/images/backnew.jpg");
             /*width: 100%;
             height: 510px;*/
           /*  background-repeat: no-repeat;*/
@@ -35,7 +37,7 @@
         h1{
             margin-left: 20px;
             margin-top : 0;
-            font-size : 60px;
+            font-size : 40px;
         }
 
        /* h1::first-letter{
@@ -58,8 +60,7 @@
       }*/
 
         .topics{
-            font-size : 35px;
-
+            font-size : 50px;
         }
 
         header>nav>ul{
@@ -107,7 +108,7 @@
 
         #proPic{
             width: 415px;
-            height: 495px;
+            height: 450px;
             margin-left: 100px;
            /* margin-top: 145px;*/
             border : 1px solid black;
@@ -143,24 +144,99 @@
             margin-bottom :10px;
         }
 
-        #iconContainer{
-            position: relative;
-            /*top: -4px;*/
-            left: 100px;
-            height: 100px;
-            width: 400px;
-           /* border: 3px solid black;*/
-            display: flex;
-            align-items: center;
-            /* flex-wrap: nowrap;*/
-            justify-content: space-around;
-            margin-left: 545px;
-            margin-top: -42px;
-            bottom : 30px;
-            gap : 3px;
-        }
+      .social_icon {
+          width: 400px;
+         /* border : 1px solid black;*/
+          margin-left: 675px;
+          margin-top: -60px;
+      }
 
-      #icon1{
+      .wrapper {
+          display: flex;
+          justify-content: space-between;
+        /*  border : 1px solid black;*/
+        /*  background : orangered;*/
+      }
+
+      .wrapper .button{
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          margin: 0 5px;
+          overflow: hidden;
+          background: #fff;
+          border-radius: 50px;
+          cursor: pointer;
+          box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+          transition: all 0.3s ease-out;
+
+      }
+
+      .wrapper .button:hover{
+          width: 200px;
+      }
+      .wrapper .button .icon{
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          text-align: center;
+          border-radius: 50px;
+          box-sizing: border-box;
+          line-height: 60px;
+          transition: all 0.3s ease-out;
+          /*  border :3px solid black ;*/
+
+      }
+
+      .wrapper .button:hover .icon{
+          background: orangered;
+
+      }
+
+      .wrapper .button .icon i{
+          margin: 0;
+          font-size: 25px;
+          line-height: 60px;
+          transition: all 0.3s ease-out;
+      }
+
+      .wrapper .button:hover .icon i{
+          color : white;
+
+      }
+      .wrapper .button span, .wrapper .button a{
+          text-decoration: none;
+          font-size: 20px;
+          font-weight:bold;
+          line-height: 60px;
+          margin-left: 10px;
+          transition: all 0.3s ease-out;
+      }
+
+      .wrapper .button span{
+          color: coral;
+
+      }
+
+
+      /* #iconContainer{
+           position: relative;
+           !*top: -4px;*!
+           left: 100px;
+           height: 100px;
+           width: 400px;
+          !* border: 3px solid black;*!
+           display: flex;
+           align-items: center;
+           !* flex-wrap: nowrap;*!
+           justify-content: space-around;
+           margin-left: 545px;
+           margin-top: -42px;
+           bottom : 30px;
+           gap : 3px;
+       }
+*/
+     /* #icon1{
           margin-left:15px;
           width: 13%;
           height : 50%;
@@ -170,7 +246,7 @@
           width: 16%;
           height : 65%;
       }
-
+*/
 
        /* #icon1{
             margin-left: 15px;
@@ -182,11 +258,25 @@
             width: 12%;
         }*/
 
+      #AboutMeTopic{
+          margin-left :250px;
+      }
+
         #details{
-            width: 520px;
+            width: 635px;
             height: 450px;
-            margin-left: 100px;
-            /*border: 1px solid black;*/
+            margin-left: 60px;
+          /*  border: 1px solid black;*/
+
+        }
+
+        #details>p{
+            font-size : 20px;
+
+        }
+
+        #Personal>ul>li{
+            font-size : 20px;
         }
 
         #blob{
@@ -204,6 +294,10 @@
              !*align-items: center;*!
              align-self: center;
          }*/
+
+         #ProjectsTopic{
+             margin-left :50px;
+         }
 
         #SquareContainer1{
             position: relative;
@@ -331,6 +425,10 @@
             font-style: oblique;
         }
 
+      #AssignmentTopic{
+          margin-left :500px;
+      }
+
       #AssigmentContainer{
           position: relative;
           top: -4px;
@@ -370,10 +468,6 @@
            content : "😊";
        }*/
 
-
-
-
-
         /* #SquareContainer2>div:nth-child(1){
              background: yellow;
          }
@@ -409,12 +503,22 @@
 
         }
 
+
         #Skills>h3{
-            margin-left: 100px;
-            font-size : 25px;
+            margin-left: 500px;
+            font-size : 35px;
             font-style: oblique;
-            /*text-align: center;*/
+
         }
+
+        #SkillsTopic{
+            margin-left :50px;
+        }
+      /*.ball {
+          position: absolute;
+          border-radius: 100%;
+          opacity: 0.7;
+      }*/
 
         #languages{
             /* border: 2px solid red;*/
@@ -796,16 +900,17 @@
             left: -102px;
             width: 1000px;
             height: 500px;
-           /* border: 1px solid black;*/
+            /*border: 1px solid black;*/
             display: grid;
             grid-template-rows: repeat(4,1fr);
             grid-template-columns: repeat(4,1fr);
             margin-left: 250px;
-
         }
 
         #Galleryimages>div{
-            border: 1px solid grey;
+           /* border: 2px solid grey;*/
+            border: 2px solid white;
+           /* border-radius : 20px;*/
         }
 
         #Galleryimages>div:nth-child(1){
@@ -1072,23 +1177,44 @@
             <h2 id="sentence">Web Designer & Developer </h2>
         </div>
 
-        <div id="iconContainer">
-            <img id="icon1" src="assets/images/icons/Insta.png" width="11%">
-            <a href=""></a>
+        <div class="social_icon">
+            <div class="wrapper">
 
-            <img class="icon2" src="assets/images/icons/Linkdin%20Icon.png" >
-            <a href=""></a>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>Instagram</span></a>
+                </div>
 
-            <img class="icon2" src="assets/images/icons/Twit.png">
-            <a href=""></a>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>LinkedIn</span></a>
+                </div>
 
-            <img class="icon2" src="assets/images/icons/Git.png">
-            <a href="https://github.com/Kavindi99"></a>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>GitHub</span></a>
+                </div>
+
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>Twitter</span></a>
+                </div>
+
+            </div>
         </div>
+
     </section>
 
     <section id="About">
-        <h2 class="topics">About Me</h2>
+        <h2 class="topics" id="AboutMeTopic">About Me</h2>
         <div id="details">
             <br>
             <p> I'm Kavindi Vithanage a web designer & a developer based in Sri Lanka.These days I'm following graduate diploma in software engineering
@@ -1143,7 +1269,7 @@
     </section>
 
     <section id="Projects">
-        <h2  class="topics">Projects</h2>
+        <h2  class="topics" id="ProjectsTopic">Projects</h2>
         <section id="SquareContainer1">
             <div>
                 <div id="Ui"></div>
@@ -1174,7 +1300,7 @@
 
     <!--Assingments linked-->
     <section id="Assignments">
-        <h2  class="topics">Assignments</h2>
+        <h2  class="topics" id="AssignmentTopic">Assignments</h2>
 
         <!--for assignment topics-->
         <section id="AssigmentContainer">
@@ -1204,7 +1330,10 @@
     </section>
 
     <section id="Skills">
-        <h2  class="topics">Skills</h2>
+        <!--<section>
+        <div class="ball"></div>
+        </section>-->
+        <h2  class="topics" id="SkillsTopic">Skills</h2>
         <h3>Languages & Tools</h3>
         <section id="icons">
             <div id="languages">
@@ -1353,6 +1482,7 @@
 <footer>
 
 </footer>
+<script src="../assets/js/jquery-3.7.0.min.js"></script>
 <script>
     let loader = document.getElementById("loader");
     //this is it. this will execute after the window is fully loaded
@@ -1364,6 +1494,54 @@
     });
 
 </script>
+
+<!--Skills background-->
+<!--
+<script>
+    // Some random colors
+    const colors = ["#FB943C", "#FEC603", "#F6BD60", "#FCBC0F", "#F85F36"];
+
+    const numBalls = 50;
+    const balls = [];
+
+    for (let i = 0; i < numBalls; i++) {
+        let ball = document.createElement("div");
+        ball.classList.add("ball");
+        ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+        ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+        ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+        ball.style.transform = `scale(${Math.random()})`;
+        ball.style.width = `${Math.random()}em`;
+        ball.style.height = ball.style.width;
+
+        balls.push(ball);
+        document.body.append(ball);
+    }
+
+    // Keyframes
+    balls.forEach((el, i, ra) => {
+        let to = {
+            x: Math.random() * (i % 2 === 0 ? -11 : 11),
+            y: Math.random() * 12
+        };
+
+        let anim = el.animate(
+            [
+                { transform: "translate(0, 0)" },
+                { transform: `translate(${to.x}rem, ${to.y}rem)` }
+            ],
+            {
+                duration: (Math.random() + 1) * 2000, // random duration
+                direction: "alternate",
+                fill: "both",
+                iterations: Infinity,
+                easing: "ease-in-out"
+            }
+        );
+    });
+</script>
+-->
+
 </body>
 </html>
 
