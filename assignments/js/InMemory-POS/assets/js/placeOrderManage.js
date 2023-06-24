@@ -29,6 +29,15 @@ let amountOfTotal=0;
 
 // btn add to cart
 $('#btnSaveOrder').click(function (){
+    let tBody=$("#tblPlaceOrder");
+
+   /* var check = false;
+
+
+    for (var i=0; i<tBody.rows.length; i++){
+        console.log("for loop ",i);
+    }
+*/
 
     let itemCodeOrder = $("#itemCodeList").val();
     let itemDescOrder =$("#itemDescPlaceOrder").val();
@@ -36,7 +45,7 @@ $('#btnSaveOrder').click(function (){
     let unitPriceorder =$("#itemUnitPricePlaceOrder").val() ;
     let totalorder =   qauntityOrder * unitPriceorder ;
 
-    let tBody=$("#tblPlaceOrder");
+
     /*console.log("FSJDJDDJDJDJD",totalorder);*/
     let tr = $('<tr> <td>'+itemCodeOrder+'</td>  <td>'+itemDescOrder+'</td>  <td>'+qauntityOrder+'</td> <td>'+unitPriceorder+'</td> <td>'+totalorder+'</td> </tr>');
 
@@ -45,8 +54,7 @@ $('#btnSaveOrder').click(function (){
 
     cartList.push({code:itemCodeOrder, desc: itemDescOrder , qty : qauntityOrder , uniPrice :unitPriceorder , total:totalorder})
 
-    console.log(cartList);
-
+    /*console.log(cartList);*/
 
     //set total for bill
     amountOfTotal =totalorder+amountOfTotal;
@@ -84,7 +92,24 @@ $('#btnPurchaseFinalOrder').click(function (){
 
     finalOrderList.push({oid:finalOrderId , date:finalOrderDate, id:finalCustomerId , code :finalItemCode,  qty : finalQuantity , discount :finalDiscount , subtotal:finalTotal})
 
-    console.log(finalOrderList);
+   /* console.log(finalOrderList);*/
+
+});
+
+$('#btnClearOrder').click(function (){
+    $('#orderIdPlaceOrder').val("");
+    $('#orderDatePlaceOrder').val("");
+    $('#cusIDList').val("");
+    $('#cusNamePlaceOrder').val("");
+
+    $('#itemCodeList').val("");
+    $('#itemDescPlaceOrder').val("");
+    $('#itemQtyPlaceOrder').val("");
+    $('#itemUnitPricePlaceOrder').val("");
+    $('#itemQauntityPlaceOrder').val("");
+
+
+
 
 });
 
