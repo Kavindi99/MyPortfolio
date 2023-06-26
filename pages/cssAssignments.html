@@ -10,59 +10,86 @@
    <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
 
     <style>
+
+        /*body{
+            background : yellow;
+        }*/
+
+        h1{
+            font-size : 50px;
+            text-align :center;
+        }
+
+
       #CssAssignments{
-        border: 1px solid red;
-        height: 150px;
-        width: 1000px;
+        /*border: 1px solid red;*/
+        height: 450px;
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: space-around;
         /* justify-content : space-between;*/
-        margin-left:150px;
+       /* margin-left:150px;*/
 
       }
 
 
       #CssAssignments>div{
         /*  border: 1px solid red;*/
-        height: 150px;
-        width: 150px;
+        height: 350px;
+        width: 200px;
         border-radius: 20px;
-        background: yellow;
+          background : linear-gradient(to top, yellow, orange );
         text-align:center;
       }
+
+        #CssAssignments>div>div{
+            height: 250px;
+            width: 200px;
+           /* border: 1px solid red;*/
+            background: url("assets/assignments.png");
+            background-size : cover;
+            background-position: center;
+        }
 
     </style>
 </head>
 <body>
-<h3>CSS</h3>
+<h1>CSS</h1>
 <section id="CssAssignments">
 
-  <div >
+      <div >
     <!-- <h2>Case One</h2>-->
     <a href="../assignments/css/case1/index.html"><h2>Case One</h2></a>
-  </div>
+          <div></div>
+      </div>
+
 
   <div>
     <a href="../assignments/css/caseTwo/index.html"><h2>Case Two</h2></a>
     <a href="../assignments/css/caseTwo/indexnew.html"><h2>Case Two New</h2></a>
+      <div></div>
   </div>
 
   <div>
     <a href="../assignments/css/caseThree/index.html"><h2>Case Three</h2></a>
+      <div></div>
   </div>
 
   <div>
     <a href="../assignments/css/caseFour/index.html"><h2>Case Four</h2></a>
+      <div></div>
   </div>
 
   <div>
     <a href="../assignments/css/caseFive/index.html"><h2>Case Five</h2></a>
+      <div></div>
   </div>
 
   <div>
     <a href="../assignments/css/caseFive&Six/index.html"><h2>Case Five & Six</h2></a>
     <a href="../assignments/css/caseFive&Six/index2.html"><h2>Case Five & Six</h2></a>
+      <div></div>
   </div>
 
 </section>

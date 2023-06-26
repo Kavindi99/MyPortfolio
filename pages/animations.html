@@ -10,40 +10,59 @@
     <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
 
     <style>
+
+        h1{
+            font-size : 50px;
+            text-align :center;
+        }
+
         #animations{
-            /* border: 1px solid red;*/
-            height: 150px;
-            width: 1000px;
+           /*  border: 1px solid red;*/
+            height: 500px;
+            width: 100vw;
             display: flex;
             align-items: center;
             justify-content: space-around;
-            margin-left:150px;
-
         }
 
         #animations>div{
             /*border: 1px solid red;*/
-            height: 150px;
-            width: 200px;
+            height: 400px;
+            width: 250px;
             border-radius: 20px;
-            background: orange;
+            background : linear-gradient(to right, yellow, orange );
+            text-align :center;
+
+        }
+
+        #animations>div>div{
+            height: 250px;
+            width: 250px;
+           /*  border: 1px solid red;*/
+            background: url("assets/assignments.png");
+            background-size : cover;
+            background-position: center;
         }
     </style>
 </head>
 <body>
-<h3>Animations</h3>
+<h1>Animations</h1>
 <section id="animations">
     <div>
         <a href="../assignments/animations/caseThree/index.html"><h2>Case Three</h2></a>
+        <div></div>
     </div>
     <div>
         <a href="../assignments/animations/caseFour/index.html"><h2>Case Four</h2></a>
+        <div></div>
     </div>
     <div>
         <a href="../assignments/animations/caseFive/index.html"><h2>Case Five</h2></a>
+        <div></div>
     </div>
     <div>
         <a href="../assignments/animations/caseSix/index.html"><h2>Case Six</h2></a>
+        <div></div>
     </div>
 
 </section>

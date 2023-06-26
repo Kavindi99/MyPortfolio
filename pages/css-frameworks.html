@@ -10,30 +10,48 @@
     <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
 
    <style>
+
+       h1{
+           font-size : 50px;
+           text-align :center;
+       }
+
        #css-frameworks{
-           /* border: 1px solid red;*/
-           height: 150px;
-           width: 1000px;
+          /*  border: 1px solid red;*/
+           height: 500px;
+           width: 100vw;
            display: flex;
            align-items: center;
            justify-content: space-around;
-           margin-left:150px;
+
        }
 
        #css-frameworks>div{
            /* border: 1px solid red;*/
-           height:150px;
+           height:400px;
            width:  300px;
            border-radius: 20px;
-           background: yellow;
+           background : linear-gradient(to left, yellow, orange );
+           text-align :center;
        }
+
+       #css-frameworks>div>div{
+           height: 250px;
+           width: 300px;
+          /*   border: 1px solid red;*/
+           background: url("assets/assignments.png");
+           background-size : cover;
+           background-position: center;
+       }
+
    </style>
 </head>
 <body>
-<h3>Css-Frameworks</h3>
+<h1>Css-Frameworks</h1>
 <section id="css-frameworks">
   <div>
     <a href="../assignments/css-framework/pos/index.html"><h2>POS</h2></a>
+      <div></div>
   </div>
 </section>
 </body>

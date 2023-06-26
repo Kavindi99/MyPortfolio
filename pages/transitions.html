@@ -10,35 +10,52 @@
     <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
 
     <style>
+
+        h1{
+            font-size : 50px;
+            text-align :center;
+        }
+
         #transitions{
-            /* border: 1px solid red;*/
-            height: 150px;
-            width: 1000px;
+           /*  border: 1px solid red;*/
+            height: 500px;
+            width: 100vw;
             display: flex;
             align-items: center;
             justify-content: space-around;
-            margin-left:150px;
         }
 
         #transitions>div{
             /*border: 1px solid red;*/
-            height:150px;
+            height:350px;
             width:  300px;
             border-radius: 20px;
-            background: yellow;
+            background : linear-gradient(to top, yellow, orange );
+            text-align : center;
         }
 
+        #transitions>div>div{
+            height: 250px;
+            width: 300px;
+            /*   border: 1px solid red;*/
+            background: url("assets/assignments.png");
+            background-size : cover;
+            background-position: center;
+        }
+        
     </style>
 </head>
 <body>
-<h3>Transitions</h3>
+<h1>Transitions</h1>
 <section id="transitions">
     <div>
         <a href="../assignments/transitions/caseOne/index.html"><h2>Case One</h2></a>
+        <div></div>
     </div>
 
     <div>
         <a href="../assignments/transitions/caseTwo/index.html"><h2>Case Two</h2></a>
+        <div></div>
     </div>
 </section>
 </body>
