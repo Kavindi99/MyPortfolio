@@ -23,6 +23,15 @@
             width : 100vw;
         }*/
 
+      body{
+          overflow-x: hidden;
+          overflow-y: scroll;
+
+      }
+      body::-webkit-scrollbar{
+          display: none;
+      }
+
         #Home{
            /* background: url("assets/images/homebackground.PNG");*/
            /* background : url("assets/images/test.png");*/
@@ -910,7 +919,7 @@
 
         #certi1{
             height: 215px;
-            width: 336px;
+            width: 336px;linear-gradient(to right, yellow, orange );
             margin-left: -494px;
         }
 
@@ -1236,11 +1245,149 @@
             background : orange;
             border : 1px solid orange;
         }
+
+
         footer{
-            height: 30px;
+            height: 20px;
             background: orange;
             margin-top: 11px;
         }
+
+
+      footer {
+          position: relative;
+          width: 100%;
+          background-color: orangered;
+          margin-top: 0px;
+          padding-top: 0;
+
+      }
+
+      footer>section{
+          background : linear-gradient(to right, yellow, orange );
+      }
+
+
+      footer>section:first-child>div:first-child>h2:first-child {
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 50px;
+          color:orangered;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      footer>section:first-child>div:first-child>h2:first-child>span {
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 50px;
+          color: white;
+      }
+
+      footer>section:first-child {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+       /*   background : linear-gradient(to right, yellow, orange );*/
+      }
+
+      footer>section:first-child>div:first-child>nav:nth-child(2) {
+          display: flex;
+          justify-content: center;
+          gap: 25px;
+      }
+
+
+      footer>section:first-child>div:first-child {
+          display: flex;
+          flex-direction: column;
+      }
+
+      footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child {
+          display: flex;
+          justify-content: space-evenly;
+          gap: 37px
+      }
+
+      /**
+      * customized social media icons covers in footer
+      */
+
+      footer>section:first-child>div:first-child>nav:nth-child(2)>div {
+          width: 50px;
+          height: 50px;
+          background: orangered;
+          box-shadow: -4px -4px 12px rgba(236, 236, 236, 0.11), 4px 4px 1px rgba(0, 0, 0, 0.16);
+          border-radius: 14px;
+          text-align: center;
+          cursor: pointer;
+      }
+
+
+      footer>section:first-child>div:first-child>nav:nth-child(2)>div:hover {
+          transition: all 0.5s ease;
+          -webkit-transform: scale(1.10);
+          transform: scale(1.10);
+      }
+
+      footer>section:first-child>div:first-child>nav:nth-child(2)>div:hover>a>i:hover {
+          transition: all 0.5s ease;
+          color: #FFA500 !important;
+      }
+
+
+      footer>section:first-child>div:first-child>nav:nth-child(2)>div>a>i {
+          font-size: 2.00em;
+          color: white;
+          padding-top: 10px;
+          cursor: pointer;
+      }
+
+
+      footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child>li {
+          font-family: 'Poppins', sans-serif;
+          font-size: 16px;
+          cursor: pointer;
+          list-style: none;
+      }
+
+      footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child>li>a {
+          line-height: 20px;
+          text-decoration: none;
+          transition: 0.3s all;
+          color: #FFFFFF;
+      }
+
+
+      footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child>li>a:hover {
+          color: #FFA500;
+          transition: 0.5s all;
+      }
+
+      /**
+      * customized copyrights section in footer
+      */
+
+      footer>section:nth-child(3) {
+          background: orangered;
+          text-align: center;
+      }
+
+      /**
+      * added color copyrights section text in footer
+      */
+
+      footer>section:nth-child(3)>small:first-child {
+          color: white;
+      }
+
+
+      footer>section:first-child>div:first-child>h2:nth-child(4) {
+          display: none;
+      }
+
+      footer>section:first-child>div:first-child>h2:nth-child(4)>span {
+          display: none;
+      }
+
     </style>
 </head>
 
@@ -1295,28 +1442,28 @@
                     <div class="icon">
                         <i class="fab fa-instagram"></i>
                     </div>
-                    <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>Instagram</span></a>
+                    <a href="" target="_blank"><span>Instagram</span></a>
                 </div>
 
                 <div class="button">
                     <div class="icon">
                         <i class="fab fa-linkedin"></i>
                     </div>
-                    <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>LinkedIn</span></a>
+                    <a href="" target="_blank"><span>LinkedIn</span></a>
                 </div>
 
                 <div class="button">
                     <div class="icon">
                         <i class="fab fa-github"></i>
                     </div>
-                    <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>GitHub</span></a>
+                    <a href="" target="_blank"><span>GitHub</span></a>
                 </div>
 
                 <div class="button">
                     <div class="icon">
                         <i class="fab fa-twitter"></i>
                     </div>
-                    <a href="https://www.facebook.com/tharani.harshika.1" target="_blank"><span>Twitter</span></a>
+                    <a href="" target="_blank"><span>Twitter</span></a>
                 </div>
 
             </div>
@@ -1591,6 +1738,41 @@
 </main>
 
 <footer>
+
+    <section>
+
+        <div>
+
+            <h2>Portfo<span>lio</span></h2>
+            <nav>
+                <div><a href="" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></div>
+                <div><a href="" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a></div>
+                <div><a href="" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a></div>
+                <div><a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+            </nav>
+
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Gallery">Galley</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <aside>
+        <!--        <h4>Quick Contact</h4>-->
+
+    </aside>
+    <section><small>Kavindi Vithanage &copy; 2023 - All rights reserved</small></section>
 
 </footer>
 <script src="../assets/js/jquery-3.7.0.min.js"></script>
