@@ -34,16 +34,78 @@
             height : 100vh;
         }
 
+      header {
+          position: fixed;
+          background: linear-gradient(to right, orangered, yellow );;
+          width: 100vw;
+          top: 0;
+          height: 50px;
+          z-index: 999;
+      }
+
         h1{
             margin-left: 20px;
             margin-top : 0;
             font-size : 40px;
         }
 
-       /* h1::first-letter{
-            color : yellow;
-            font-size : 70px;
-        }*/
+      #heading1 {
+          position: relative;
+          left: 10px;
+          top: 10px;
+          text-decoration: none;
+         /* font-family: 'Ubuntu', sans-serif;*/
+          font-style: normal;
+          font-weight: 700;
+          font-size: 38px;
+          line-height: 46px;
+          color: black;
+      }
+
+      #heading2 {
+          font-family: 'Ubuntu', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 38px;
+          line-height: 46px;
+          color: white;
+      }
+
+      .Menu ul li i{
+          color: #ffa500;
+          font-size: 20px;
+          margin-right: 10px;
+      }
+
+      .Menu{
+          position: absolute;
+          right: 10px;
+          top: 0;
+      }
+
+      .Menu ul li {
+          display: inline-block;
+          list-style: none;
+          cursor: pointer;
+          padding: 10px;
+          font-family: Arial;
+          font-size: 15px;
+          font-weight: 600;
+      }
+
+      .Menu ul li a {
+          line-height: 20px;
+          text-decoration: none;
+          transition: 0.3s all;
+          color: white;
+          font-size: 19px;
+      }
+
+
+      /* h1::first-letter{
+           color : yellow;
+           font-size : 70px;
+       }*/
 
         h2{
             margin-left: 20px;
@@ -62,7 +124,7 @@
         .topics{
             font-size : 50px;
         }
-
+/*
         header>nav>ul{
             position: absolute;
             right: 0px;
@@ -74,13 +136,13 @@
             margin-left: 5px;
             margin-right: 15px;
             display: inline-block;
-            /*font-weight: bold;*/
+            !*font-weight: bold;*!
         }
 
         header>nav>ul>li>a{
             text-decoration: none;
             color: white;
-        }
+        }*/
 
       #loader {
           transition: opacity 1s;
@@ -106,16 +168,45 @@
           background-position: center;
       }
 
-        #proPic{
+        #proPicContainer{
+
             width: 415px;
             height: 450px;
             margin-left: 100px;
            /* margin-top: 145px;*/
-            border : 1px solid black;
+         /*   border : 1px solid black;*/
             border-radius: 20px;
             margin-left :45px;
-            margin-top : 10px;
+            margin-top : 50px;
+            padding-top : 90px;
+            padding-left : 60px;
+
         }
+
+      #proPicContainer>div{
+          border: 1px solid  darkorange;
+          height: 350px;
+          width: 350px;
+          border-radius: 20px;
+          /*background: orange;*/
+          background : linear-gradient(to top, yellow, orange );
+      }
+
+      #proPicContainer>div>div{
+          height: 350px;
+          width: 350px;
+          border-radius: 20px;
+        /*  background: orange;  */
+         /*    border: 2px solid red;*/
+          margin-left : 30px;
+          margin-top: 30px;
+      }
+
+      #proPic{
+          background: url("assets/images/proPic.jpeg");
+          background-size : cover;
+          background-position: center;
+      }
 
         #Intoduce{
            /* background: url("assets/images/introbachground.PNG");*/
@@ -1156,7 +1247,12 @@
 <body>
 
 <header>
-    <nav>
+    <aside>
+        <div class="heading1Shape"></div>
+        <span id="heading1">Portfo<span id="heading2">lio</span></span>
+    </aside>
+
+    <nav class="Menu">
         <ul>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
@@ -1166,19 +1262,25 @@
             <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
-
+<!--
     <div id="loader">
         <div></div>
     </div>
+    -->
+    <aside>
+        <div class="heading2Shape"></div>
+    </aside>
 </header>
 
 
 <main>
     <section id="Home">
-        <h1>Portfolio</h1>
+       <!-- <h1>Portfolio</h1>-->
 
-        <div id="proPic">
-
+        <div id="proPicContainer">
+            <div>
+                <div id="proPic"></div>
+            </div>
         </div>
 
         <div id="Intoduce">
