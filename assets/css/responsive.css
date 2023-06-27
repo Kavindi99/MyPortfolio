@@ -784,6 +784,69 @@
         margin-left: 68px;
     }
 
-    
+    #AssigmentContainer {
+        width: 320px;
+    }
+
+    #AssigmentContainer>div {
+        width: 65px;
+        margin-left: -19px;
+    }
+
+    #AssigmentContainer>div>div:nth-child(1) {
+        width: 62px;
+    }
+
+    h2 {
+        margin-left: 2px;
+        font-size: 12px;
+    }
+
+    #SkillsTopic {
+        margin-left: 10px;
+    }
+
+    #Skills>h3 {
+        margin-left: 58px;
+    }
+
+    #certificates {
+        width: 320px;
+        margin-top: -38px;
+    }
+
+    #Gallerynav {
+        margin-left: 16px;
+    }
+
+    #Galleryimages {
+        width: 320px;
+        margin-left: 101px;
+    }
+
+    .iconsec {
+        right: 4px;
+    }
+
+    .mydetails {
+        right: -52px;
+    }
+
+    .mydetails>div {
+        width: 246px;
+    }
+
+    #messageContainer {
+        margin-left: -40px;
+    }
+
+    #message {
+        width: 286px;
+    }
+
+    footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child {
+        gap: 5px;
+        margin-left: -40px;
+    }
 }
 
