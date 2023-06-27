@@ -613,6 +613,27 @@
     #SquareContainer2 {
         margin-left: 34px;
     }
+
+    #AssignmentTopic {
+        margin-left: 92px;
+    }
+
+    #AssigmentContainer {
+        width: 370px;
+    }
+
+    #AssigmentContainer>div {
+        width: 77px;
+        margin-left: -14px;
+    }
+
+    #AssigmentContainer>div>div:nth-child(1) {
+        width: 74px;
+    }
+
+    h2 {
+        margin-left: 6px;
+    }
 }
 
 
