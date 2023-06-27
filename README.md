@@ -14,8 +14,8 @@ Mockup : https://www.figma.com/file/iWT2NfnLNVm2KxBcqI4P7W/Mock-Up?node-id=0%3A1
 InfinityFree : http://restora.infinityfreeapp.com/index.html.html <br>
 GitHub Pages : https://kavindi99.github.io/MyPortfolio/ <br>
 <h3> Web POS Using CSS FrameWorks</h3>
- Site-Map : https://drive.google.com/file/d/1JEyyxcY45iyFdNGg4HTNA7dMxVNw5TaJ/view?usp=sharing <br>
- WireFrame :https://drive.google.com/file/d/1JEyyxcY45iyFdNGg4HTNA7dMxVNw5TaJ/view?usp=sharing  <br>
+ Site-Map : https://drive.google.com/file/d/1JEyyxcY45iyFdNGg4HTNA7dMxVNw5TaJ/view?usp=sharing<br>
+ WireFrame :https://drive.google.com/file/d/1JEyyxcY45iyFdNGg4HTNA7dMxVNw5TaJ/view?usp=sharing<br>
  Mockup :  <br>
 <h3>Developed By Kavindi Vithanage </h3>
 Desktop View
