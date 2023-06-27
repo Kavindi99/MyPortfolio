@@ -634,6 +634,50 @@
     h2 {
         margin-left: 6px;
     }
+
+    #Skills>h3 {
+        margin-left: 112px;
+    }
+
+    #languages {
+        margin-left: -10px;
+        width: 370px;
+    }
+
+    #tools>div:nth-child(1) {
+        margin-left: -4px;
+    }
+
+    #tools>div:nth-child(2) {
+        margin-left: 82px;
+    }
+
+    #tools>div:nth-child(3) {
+        margin-left: 156px;
+    }
+
+    #tools>div:nth-child(4) {
+        margin-left: 236px;
+    }
+
+    #tools>div:nth-child(5) {
+        margin-left: 312px;
+    }
+
+    #certificates {
+        width: 370px;
+        margin-left: -40px;
+    }
+
+    #Gallerynav {
+        margin-left: 55px;
+    }
+
+    #Galleryimages {
+        width: 370px;
+    }
+
+
 }
 
 
