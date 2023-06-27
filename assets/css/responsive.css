@@ -423,8 +423,92 @@
 
     #AssigmentContainer {
         width: 410px;
-        height: 353px;
+        height: 186px;
+        margin-top: 60px;
     }
+
+    #AssigmentContainer>div {
+        width: 90px;
+        height: 164px;
+        margin-top: -110px;
+    }
+
+    #AssigmentContainer>div>div:nth-child(1) {
+        width: 83px;
+        height: 98px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    #SkillsTopic {
+        margin-left: 20px;
+        margin-top: -46px;
+    }
+
+    #Skills>h3 {
+        margin-left: 105px;
+        font-size: 26px;
+        margin-top: -21px;
+    }
+
+    #icons {
+        height: 470px;
+    }
+
+    #languages {
+        margin-left: 16px;
+    }
+
+    #tools {
+        margin-left: -3px;
+        margin-top: 12px;
+    }
+
+    #tools>div:nth-child(1){
+        height: 80px;
+        width : 80px;
+    }
+
+    #tools>div:nth-child(2) {
+        height: 80px;
+        width: 80px;
+        margin-left: 85px;
+        margin-top: -80px;
+    }
+
+    #tools>div:nth-child(3) {
+        height: 80px;
+        width: 80px;
+        margin-left: 170px;
+        margin-top: -80px;
+    }
+
+    #tools>div:nth-child(4) {
+        height: 80px;
+        width: 80px;
+        margin-left: 256px;
+        margin-top: -80px;
+    }
+
+    #tools>div:nth-child(5) {
+        height: 80px;
+        width: 80px;
+        margin-left: 342px;
+        margin-top: -80px;
+    }
+
+    #Skills>h3 {
+        margin-left: 137px;
+    }
+
+    #certificates {
+        width: 410px;
+    }
+
 
     #Gallerynav {
         margin-left: 68px;
@@ -433,6 +517,29 @@
     #Galleryimages {
         width: 420px;
         margin-left: 105px;
+    }
+
+    #Contact>img {
+        margin-left: 175px;
+        height: 200px;
+        width: 250px;
+    }
+
+    .iconsec {
+        right: -10px;
+    }
+
+    .mydetails {
+        right: -82px;
+    }
+
+    #seperator {
+        display: none;
+    }
+
+    #messageContainer {
+        margin-left: 10px;
+        margin-top: -45px;
     }
 
     footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child {
