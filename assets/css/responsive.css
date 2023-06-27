@@ -580,6 +580,22 @@
     .wrapper .button span, .wrapper .button a {
         font-size: 15px;
     }
+
+    #AboutMeTopic {
+        margin-left: 105px;
+    }
+
+    #details {
+        margin-left: 25px;
+    }
+
+    #blob {
+        margin-left: -57px;
+    }
+
+    #ProjectsTopic {
+        margin-left: 132px;
+    }
 }
 
 
