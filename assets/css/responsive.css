@@ -681,9 +681,33 @@
         margin-top: -141px;
     }
 
-    
+    #Contact>img {
+        margin-left: 139px;
+        height: 190px;
+        width: 236px;
+    }
 
+    .iconsec {
+        right: -2px;
+    }
+
+    .mydetails {
+        right: -70px;
+    }
+
+    #messageContainer {
+        margin-left: -18px;
+    }
+
+    #Contact {
+        margin-bottom: -10px;
+    }
 
 }
 
+@media (max-width: 320px){
+    #proPicContainer {
+        padding-left: 9px;
+    }
+}
 
