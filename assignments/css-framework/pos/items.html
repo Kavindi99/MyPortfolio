@@ -19,7 +19,8 @@
 <body>
 
 <header>
-  <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style="background-color: #ffc107;" >
+  <!--Nav Bar-->
+  <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style="background-color:lightgreen;" >
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Pos System</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +29,20 @@
       <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="index.html">Customer</a>
+            <!--                        <a class="nav-link text-white" aria-current="page" href="../../css-framework/pos/index.html" id="btnCustomer" >Customer</a>-->
+            <a class="nav-link text-white" aria-current="page" href="#customer" id="btnCustomer" >Customer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="Items.html">Items</a>
+            <!--  <a class="nav-link text-white" href="../../css-framework/pos/items.html" id="btnItem">Items</a>-->
+            <a class="nav-link text-white"  href="#item" id="btnItem">Items</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="Orders.html">Orders</a>
+            <!-- <a class="nav-link text-white" href="../../css-framework/pos/orders.html" id="btnOrder">Orders</a>-->
+            <a class="nav-link text-white" href="#orders" id="btnOrder">Orders</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="PlaceOrder.html">Place Orders</a>
+            <!--    <a class="nav-link text-white" href="../../css-framework/pos/placeOrder.html" id="btnPlaceOrder">Place Orders</a>-->
+            <a class="nav-link text-white"  href="#placeOrder" id="btnPlaceOrder">Place Orders</a>
           </li>
 
         </ul>
@@ -51,7 +56,7 @@
 </header>
 
 <main class="container">
-  <section class="row p-4 m-0 object-fit-contain" id="Items">
+  <section class="row p-0 m-0 object-fit-contain" id="Items">
     <h2 class="text-success pt-5 m-lg-2">Manage Items</h2>
     <section class="col-12 col-sm-12 col-md-12 col-lg-4  m-3 border rounded object-fit-contain" >
       <h5 class="text-dark text-center m-lg-3 pt-5" >Add Items</h5>
@@ -73,32 +78,35 @@
 
         <div class="form-floating mb-3">
           <input type="email" class="form-control" id="Qty" placeholder="Contact">
-          <label for="Qty">Quantity</label>
+          <label for="Qty">Item Quantity</label>
         </div>
       </form>
 
-      <div class="col-8 ms-5">
-        <button type="button" class="btn btn-success me-1 mt-2 mb-3">Save</button>
-        <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
-        <button type="button" class="btn btn-warning">Edit</button>
-        <button type="button" class="btn btn-danger">Delete</button>
+      <div class=" btn-group col-4 ">
+        <button id="btnSaveItem" type="button" class="btn btn-success ">Save</button>
+        <button id="btnDeleteItem" type="button"  class="btn btn-danger">Delete </button>
+        <button id="btnUpdateItem" type="button" class="btn btn-warning ">Update</button>
+        <button id="btnGetAllItems" type="button"  class="btn btn-success">Get All </button>
+        <button id="btnClearAllItems" type="button"  class="btn btn-danger">Clear All </button>
       </div>
 
     </section>
 
-    <section class="col-12 col-sm-12 col-md-12 col-lg-7  m-3 border rounded object-fit-contain overflow-scroll ">
-      <h5 class="text-dark text-center m-lg-3 pb-3" >Item Details</h5>
-      <table class="table table-light table-striped">
-        <thead>
-        <tr>
-          <th style="background-color: lightgoldenrodyellow" scope="col">Item Code</th>
-          <th style="background-color: lightgoldenrodyellow" scope="col">Description</th>
-          <th style="background-color: lightgoldenrodyellow" scope="col">Unit Price</th>
-          <th style="background-color: lightgoldenrodyellow" scope="col">Quantity</th>
-         <!-- <th style="background-color: lightgoldenrodyellow" scope="col">Action</th>-->
-        </tr>
-        </thead>
-        <tbody>
+  </section>
+
+  <section class="col-12 col-sm-12 col-md-12 col-lg-7 m-3 border rounded object-fit-contain overflow-scroll ">
+    <h5 class="text-dark text-center m-lg-3 pb-3" >Item Details</h5>
+    <table class="table table-light table-striped">
+      <thead>
+      <tr>
+        <th style="background-color: lightgoldenrodyellow" scope="col">Item Code</th>
+        <th style="background-color: lightgoldenrodyellow" scope="col">Description</th>
+        <th style="background-color: lightgoldenrodyellow" scope="col">Unit Price</th>
+        <th style="background-color: lightgoldenrodyellow" scope="col">Item Quantity</th>
+        <!--   <th style="background-color: lightgoldenrodyellow" scope="col">Action</th>-->
+      </tr>
+      </thead>
+      <tbody id="tblItem">
         <tr>
           <th scope="row">I001</th>
           <td>Flour</td>
