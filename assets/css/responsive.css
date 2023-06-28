@@ -85,6 +85,13 @@
         margin-left: -50px;
     }
 
+    #certificates>div>div {
+        height: 205px;
+        width: 282px;
+        margin-left: 18px;
+        margin-top: 28px;
+    }
+
     #Gallerynav {
         margin-left: 360px;
 
@@ -507,8 +514,16 @@
 
     #certificates {
         width: 410px;
+        display: block;
+        height: 506px;
+        margin-left: 18px;
     }
 
+
+    #certificates>div>div {
+        margin-left: 20px;
+        margin-top: 26px;
+    }
 
     #Gallerynav {
         margin-left: 68px;
@@ -666,9 +681,9 @@
 
     #certificates {
         width: 370px;
-        margin-left: -40px;
+        margin-left: -12px;
     }
-
+    
     #Gallerynav {
         margin-left: 55px;
     }

@@ -600,6 +600,26 @@ h2{
 
 }
 
+#certificates>div>div{
+    /*border : 1px solid red;*/
+    height: 210px;
+    width: 325px;
+    margin-left: 36px;
+    margin-top: 20px;
+}
+
+#certificates>div>div:nth-child(1){
+    background : url("../images/cyber.PNG");
+    background-size : cover;
+    background-position: center;
+}
+
+#certificates>div>div:nth-child(2) {
+    background : url("../images/cyberessentials.PNG");
+    background-size : cover;
+    background-position: center;
+}
+
 #Skills>h3{
     margin-left: 500px;
     font-size : 35px;
@@ -859,9 +879,11 @@ h2{
     margin-top: 18px;
 }
 
-/* #tool3{
-
- }*/
+ #tool3{
+     width: 60%;
+     margin-left: 18px;
+     margin-top: 18px;
+ }
 
 #tool4{
     width: 60%;
@@ -893,9 +915,11 @@ h2{
     margin-top: 20px;
 }
 
-/* #tool9{
-
- }*/
+ #tool9{
+     width: 60%;
+     margin-left: 18px;
+     margin-top: 18px;
+ }
 
 #certificates>div{
     height: 250px;
