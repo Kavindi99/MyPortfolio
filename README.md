@@ -16,6 +16,6 @@ GitHub Pages : https://kavindi99.github.io/MyPortfolio/ <br>
 <h3> Web POS Using CSS FrameWorks</h3>
  Site-Map : https://drive.google.com/file/d/1JEyyxcY45iyFdNGg4HTNA7dMxVNw5TaJ/view?usp=sharing<br>
  WireFrame :https://drive.google.com/file/d/1JEyyxcY45iyFdNGg4HTNA7dMxVNw5TaJ/view?usp=sharing<br>
- Mockup :  <br>
+ Mockup : https://www.figma.com/file/UGWzl1CHCyz8nSAZBa5xRb/Untitled?type=design&node-id=0%3A1&mode=design&t=eS5iTMrO3qrzNa2G-1 <br>
 <h3>Developed By Kavindi Vithanage </h3>
 Desktop View
